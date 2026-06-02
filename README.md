@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <!-- Animated header banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0c0c0c,50:00cccc,100:33ff33&height=180&section=header&text=mathias-paulenko-cv&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35" alt="mathias-paulenko-cv header" />
@@ -14,25 +14,11 @@
 [![Deploy](https://img.shields.io/github/actions/workflow/status/MathiasPaulenko/mathias-paulenko-cv/deploy.yml?style=for-the-badge&label=deploy&labelColor=0c0c0c&color=33ff33)](https://github.com/MathiasPaulenko/mathias-paulenko-cv/actions)
 [![License](https://img.shields.io/badge/license-All_Rights_Reserved-ff4444?style=for-the-badge&labelColor=0c0c0c)](./LICENSE)
 
-```
-╔══════════════════════════════════════════════════════════╗
-║  ~/mathias$ cat portfolio.config                         ║
-║  > name   = "Mathias Paulenko"                           ║
-║  > role   = "Project Leader & Test Architect"            ║
-║  > stack  = "Python · React · Full Stack"                ║
-║  > status = "Open to opportunities"                      ║
-╚══════════════════════════════════════════════════════════╝
-```
-
 </div>
 
 ---
 
 ## ⚡ Features
-
-```bash
-$ ls --features
-```
 
 | Feature | Description |
 |---------|-------------|
@@ -49,19 +35,15 @@ $ ls --features
 | 🧭 **ScrollSpy Navbar** | Active section highlighting on scroll with smooth anchor navigation |
 | 🏳️ **Flag Icons** | Dynamic flag CDN images for language selector and language section |
 | 📊 **Progress Bars** | Terminal-style ASCII block progress bars for language proficiency |
-| � **Contact** | Terminal-styled contact info with email, phone, location and social links |
+| 📬 **Contact** | Terminal-styled contact info with email, phone, location and social links |
 | ♿ **Accessible** | ARIA labels on icon buttons, semantic roles, aria-hidden on decorative elements |
 | 🔍 **SEO** | Meta tags, Open Graph, Twitter cards, canonical URL, hreflang, PWA manifest |
-| �🚀 **CI/CD** | Auto-deploy on push via GitHub Actions + Lighthouse CI |
+| 🚀 **CI/CD** | Auto-deploy on push via GitHub Actions + Lighthouse CI |
 | 🌐 **Custom Domain** | mathiaspaulenko.com with CNAME |
 
 ---
 
 ## 🛠️ Tech Stack
-
-```bash
-$ npm list --depth=0
-```
 
 <div align="center">
 
