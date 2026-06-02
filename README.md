@@ -155,7 +155,24 @@ mathias-paulenko-cv/
 
 ---
 
-## 📄 License
+## � Credits & Acknowledgments
+
+| Resource | Author / Owner |
+|----------|---------------|
+| **React** | [Meta / React Team](https://react.dev/) |
+| **Vite** | [Evan You / Vite Team](https://vitejs.dev/) |
+| **Tailwind CSS** | [Tailwind Labs, Inc.](https://tailwindcss.com/) |
+| **Framer Motion** | [Motion (formerly Framer)](https://motion.dev/) |
+| **Lucide Icons** | [Lucide Contributors](https://lucide.dev/) |
+| **IBM Plex Mono & Space Mono** | [IBM](https://fonts.google.com/specimen/IBM+Plex+Mono) · [Colophon Foundry / Google Fonts](https://fonts.google.com/specimen/Space+Mono) |
+| **Capsule Render** (header/footer banners) | [kyechan99](https://github.com/kyechan99/capsule-render) |
+| **Readme Typing SVG** | [DenverCoder1](https://github.com/DenverCoder1/readme-typing-svg) |
+| **GitHub Pages** | [GitHub, Inc.](https://pages.github.com/) |
+| **AI Assistance** | Design & code assistance by [Cascade](https://www.codeium.com/cascade) |
+
+---
+
+## �📄 License
 
 Personal project — All rights reserved.
 
