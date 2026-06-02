@@ -46,7 +46,7 @@ export const TechStack = () => {
             <div className="text-[#999999] text-sm mb-3">
               <span className="text-[#33ff33]">mathias@dev</span>:<span className="text-[#6688cc]">~/skills</span>$ ls
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 print:hidden">
               {categories.map((cat) => (
                 <button
                   key={cat.key}
@@ -72,14 +72,14 @@ export const TechStack = () => {
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
-            className="flex flex-wrap gap-2 mb-8"
+            className="flex flex-wrap gap-2 mb-8 print:!block"
           >
             {currentItems.map((item, i) => (
               <motion.span
                 key={item.name}
                 variants={fadeInUp}
                 custom={i}
-                className="inline-flex items-center gap-2 px-4 py-2 border border-[#2a2a2a] text-sm hover:border-[#ffb000] hover:text-[#ffb000] text-[#b8b8b8] transition-all duration-300 cursor-default"
+                className="inline-flex items-center gap-2 px-4 py-2 border border-[#2a2a2a] text-sm hover:border-[#ffb000] hover:text-[#ffb000] text-[#b8b8b8] transition-all duration-300 cursor-default print:!inline-flex print:!border-black print:!text-black"
               >
                 {item.icon ? (
                   <img loading="lazy" src={item.icon} alt={item.name} className="w-5 h-5" />
@@ -90,6 +90,25 @@ export const TechStack = () => {
               </motion.span>
             ))}
           </motion.div>
+
+          {/* Print-only: show all categories expanded */}
+          <div className="hidden print:block">
+            {categories.map((cat) => {
+              const items = techStack[cat.key] || []
+              return (
+                <div key={cat.key} className="mb-4">
+                  <div className="font-mono text-sm font-bold mb-2">{cat.label}</div>
+                  <div className="flex flex-wrap gap-1">
+                    {items.map((item) => (
+                      <span key={item.name} className="inline-flex items-center gap-1 px-2 py-1 border border-black text-xs">
+                        {item.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
 
         </div>
       </div>

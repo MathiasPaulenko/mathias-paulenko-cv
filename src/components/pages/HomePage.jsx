@@ -6,6 +6,7 @@ import { Experience } from '../sections/Experience'
 import { Footer } from '../layout/Footer'
 import { Languages } from '../sections/Languages'
 import { Navbar } from '../layout/Navbar'
+import { KeyboardShortcutsHint } from '../ui/KeyboardShortcutsHint'
 import { ScrollToTop } from '../ui/ScrollToTop'
 import { TechStack } from '../sections/TechStack'
 import { Terminal } from '../sections/Terminal'
@@ -33,6 +34,7 @@ export const HomePage = () => {
       </main>
       <Footer />
       <ScrollToTop />
+      <KeyboardShortcutsHint />
     </>
   )
 }
