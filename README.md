@@ -36,12 +36,24 @@ $ ls --features
 
 | Feature | Description |
 |---------|-------------|
-| 🖥️ **Terminal UI** | CRT scanlines, ASCII art, git-log experience, JSON education |
-| 🌍 **i18n** | Full translations in English, Spanish & Chinese |
-| 🌗 **Theme Toggle** | Dark (default) and light mode |
-| 📱 **Responsive** | Mobile-first with collapsible navbar |
-| ✨ **Animated** | Framer Motion entrance & scroll animations |
-| 🚀 **CI/CD** | Auto-deploy on push via GitHub Actions |
+| 🖥️ **Terminal UI** | CRT scanlines, ASCII art hero, git-log experience, JSON education, npm-list certifications, ASCII progress bars |
+| 🌍 **i18n** | Full translations in English, Spanish & Chinese with language selector dropdown and flag icons |
+| 🌗 **Theme Toggle** | Dark (default) and light mode with persistent preference |
+| 📱 **Responsive** | Mobile-first with collapsible navbar, adaptive ASCII art (big text on mobile), compact progress bars |
+| ✨ **Animated** | Framer Motion entrance, scroll-triggered animations, staggered lists |
+| ⌨️ **Keyboard Shortcuts** | Navigate sections with H, A, S, E, D, C, L, N and scroll to top with Home key; visible shortcuts hint UI |
+| 🔝 **Scroll to Top** | Floating button appears on scroll |
+| 🔗 **Share** | Twitter, LinkedIn and Copy URL buttons |
+| 📋 **Copy to Clipboard** | One-click copy for email, phone and URL |
+| 🖨️ **Print Optimized** | Skills section auto-expands all categories when printing |
+| 🧭 **ScrollSpy Navbar** | Active section highlighting on scroll with smooth anchor navigation |
+| 🏳️ **Flag Icons** | Dynamic flag CDN images for language selector and language section |
+| 📊 **Progress Bars** | Terminal-style ASCII block progress bars for language proficiency |
+| � **Contact** | Terminal-styled contact info with email, phone, location and social links |
+| ♿ **Accessible** | ARIA labels on icon buttons, semantic roles, aria-hidden on decorative elements |
+| 🔍 **SEO** | Meta tags, Open Graph, Twitter cards, canonical URL, hreflang, PWA manifest |
+| �🚀 **CI/CD** | Auto-deploy on push via GitHub Actions + Lighthouse CI |
+| 🌐 **Custom Domain** | mathiaspaulenko.com with CNAME |
 
 ---
 
