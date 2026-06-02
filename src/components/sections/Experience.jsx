@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion'
+import { useTranslation } from '../../hooks/useTranslation'
+import { Landmark, Zap, Factory, Shield, ShoppingCart, Dumbbell, Link, Camera } from 'lucide-react'
 import { experience } from '../../data/cvData'
 import { SectionWrapper } from '../ui/SectionWrapper'
 import { fadeInUp, staggerContainer } from '../../helpers/animations'
-import { Landmark, Zap, Factory, Shield, ShoppingCart, Dumbbell, Link, Camera } from 'lucide-react'
-import { useTranslation } from '../../hooks/useTranslation'
+import { motion } from 'framer-motion'
 
 export const Experience = () => {
   const t = useTranslation()
@@ -58,7 +58,6 @@ export const Experience = () => {
         ))}
       </motion.div>
 
-      {/* Sectors */}
       <motion.div
         variants={staggerContainer}
         initial="hidden"

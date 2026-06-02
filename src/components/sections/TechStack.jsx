@@ -5,8 +5,6 @@ import { techStack } from '../../data/cvData'
 import { SectionWrapper } from '../ui/SectionWrapper'
 import { fadeInUp, staggerContainer } from '../../helpers/animations'
 
-// yeah i know, folder icons. fight me.
-
 const categories = [
   { key: 'languages', label: 'languages/', icon: '📁' },
   { key: 'frontend', label: 'frontend/', icon: '📁' },

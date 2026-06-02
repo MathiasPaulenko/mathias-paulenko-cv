@@ -4,8 +4,6 @@ import { motion } from 'framer-motion'
 import { personalInfo } from '../../data/cvData'
 import { fadeInUp, staggerContainer } from '../../helpers/animations'
 
-// my name in ascii. took way too long to get the spacing right.
-
 const Flag = ({ code, alt }) => (
   <img
     src={`https://flagcdn.com/20x15/${code}.png`}

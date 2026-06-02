@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion'
+import { useTranslation } from '../../hooks/useTranslation'
 import { Github, Linkedin, Mail } from 'lucide-react'
 import { personalInfo } from '../../data/cvData'
 import { fadeInUp, staggerContainer } from '../../helpers/animations'
-import { useTranslation } from '../../hooks/useTranslation'
+import { motion } from 'framer-motion'
 
 export const Contact = () => {
   const t = useTranslation()
@@ -39,7 +39,6 @@ export const Contact = () => {
           viewport={{ once: true }}
           className="border border-[#2a2a2a] bg-[#0c0c0c]"
         >
-          {/* Terminal header */}
           <div className="flex items-center justify-between px-4 py-1.5 border-b border-[#2a2a2a] bg-[#141414]">
             <span className="text-[#7a7a7a] text-xs">contact — ping</span>
             <div className="flex gap-px">

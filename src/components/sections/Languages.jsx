@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion'
+import { useTranslation } from '../../hooks/useTranslation'
 import { SectionWrapper } from '../ui/SectionWrapper'
 import { fadeInUp, staggerContainer } from '../../helpers/animations'
-import { useTranslation } from '../../hooks/useTranslation'
+import { motion } from 'framer-motion'
 
 const levelBars = { Native: 20, Nativo: 20, '母语': 20, B2: 14, A2: 7 }
 const levelColor = { Native: '#33ff33', Nativo: '#33ff33', '母语': '#33ff33', B2: '#ffb000', A2: '#00cccc' }

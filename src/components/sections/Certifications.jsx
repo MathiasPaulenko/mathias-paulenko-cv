@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion'
+import { useTranslation } from '../../hooks/useTranslation'
 import { certifications } from '../../data/cvData'
 import { SectionWrapper } from '../ui/SectionWrapper'
 import { fadeInUp } from '../../helpers/animations'
-import { useTranslation } from '../../hooks/useTranslation'
+import { motion } from 'framer-motion'
 
 export const Certifications = () => {
   const t = useTranslation()
@@ -10,7 +10,6 @@ export const Certifications = () => {
   return (
     <SectionWrapper id="certifications" title={t.sectionCerts} subtitle={t.sectionCertsSub}>
       <div className="grid md:grid-cols-2 gap-4">
-        {/* Certifications */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -36,7 +35,6 @@ export const Certifications = () => {
           ))}
         </motion.div>
 
-        {/* Training */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -64,7 +62,6 @@ export const Certifications = () => {
 
       </div>
 
-      {/* Self-learning */}
       <motion.div
         variants={fadeInUp}
         initial="hidden"

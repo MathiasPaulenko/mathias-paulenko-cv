@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from '../../hooks/useLanguage'
 import { useTheme } from '../../hooks/useTheme'
+import { AnimatePresence, motion } from 'framer-motion'
+import { ChevronDown, Menu, Moon, Sun, X } from 'lucide-react'
 
 const navLinks = [
   { label: './about', href: '#about' },

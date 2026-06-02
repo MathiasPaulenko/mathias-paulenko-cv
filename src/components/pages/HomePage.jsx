@@ -1,13 +1,13 @@
-import { Navbar } from '../layout/Navbar'
-import { Footer } from '../layout/Footer'
-import { Terminal } from '../sections/Terminal'
 import { About } from '../sections/About'
-import { TechStack } from '../sections/TechStack'
-import { Experience } from '../sections/Experience'
-import { Education } from '../sections/Education'
 import { Certifications } from '../sections/Certifications'
-import { Languages } from '../sections/Languages'
 import { Contact } from '../sections/Contact'
+import { Education } from '../sections/Education'
+import { Experience } from '../sections/Experience'
+import { Footer } from '../layout/Footer'
+import { Languages } from '../sections/Languages'
+import { Navbar } from '../layout/Navbar'
+import { TechStack } from '../sections/TechStack'
+import { Terminal } from '../sections/Terminal'
 
 export const HomePage = () => {
   return (
