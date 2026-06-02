@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
 import { fadeInUp } from '../../helpers/animations'
+import { motion } from 'framer-motion'
 
 export const SectionWrapper = ({ id, title, subtitle, children, className = '' }) => {
   return (

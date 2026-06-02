@@ -1,9 +1,11 @@
+import { useState } from 'react'
+import { useTranslation } from '../../hooks/useTranslation'
 import { motion } from 'framer-motion'
 import { techStack } from '../../data/cvData'
 import { SectionWrapper } from '../ui/SectionWrapper'
 import { fadeInUp, staggerContainer } from '../../helpers/animations'
-import { useState } from 'react'
-import { useTranslation } from '../../hooks/useTranslation'
+
+// yeah i know, folder icons. fight me.
 
 const categories = [
   { key: 'languages', label: 'languages/', icon: '📁' },
@@ -32,7 +34,6 @@ export const TechStack = () => {
   return (
     <SectionWrapper id="skills" title={t.sectionSkills} subtitle={t.sectionSkillsSub}>
       <div className="border border-[#2a2a2a] bg-[#0c0c0c]">
-        {/* Terminal header */}
         <div className="flex items-center justify-between px-4 py-1.5 border-b border-[#2a2a2a] bg-[#141414]">
           <span className="text-[#7a7a7a] text-xs">skills — ls -la</span>
           <div className="flex gap-px">
@@ -43,7 +44,6 @@ export const TechStack = () => {
         </div>
 
         <div className="p-6 md:p-8">
-          {/* Directory listing as tabs */}
           <div className="mb-6">
             <div className="text-[#999999] text-sm mb-3">
               <span className="text-[#33ff33]">mathias@dev</span>:<span className="text-[#6688cc]">~/skills</span>$ ls
@@ -65,12 +65,10 @@ export const TechStack = () => {
             </div>
           </div>
 
-          {/* Command output */}
           <div className="text-[#999999] text-sm mb-3">
-            <span className="text-[#33ff33]">mathias@dev</span>:<span className="text-[#6688cc]">~/skills</span>$ cat {categories.find(c => c.key === active)?.label}*
+            <span className="text-[#33ff33]">mathias@dev</span>:<span className="text-[#6688cc]">~/skills</span>${' '}cat{' '}
+            {categories.find(c => c.key === active)?.label}*
           </div>
-
-          {/* Skills list */}
           <motion.div
             key={active}
             variants={staggerContainer}

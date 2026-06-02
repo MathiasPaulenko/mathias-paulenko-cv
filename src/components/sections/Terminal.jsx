@@ -1,8 +1,10 @@
-import { motion } from 'framer-motion'
+import { useTranslation } from '../../hooks/useTranslation'
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { personalInfo } from '../../data/cvData'
 import { fadeInUp, staggerContainer } from '../../helpers/animations'
-import { useTranslation } from '../../hooks/useTranslation'
+
+// my name in ascii. took way too long to get the spacing right.
 
 const Flag = ({ code, alt }) => (
   <img
@@ -24,7 +26,6 @@ export const Terminal = () => {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-8"
     >
-      {/* Animated grid background */}
       <div
         className="pointer-events-none absolute inset-0 z-0 opacity-[0.12]"
         style={{
@@ -36,7 +37,6 @@ export const Terminal = () => {
         }}
       />
 
-      {/* Floating particles */}
       {[...Array(12)].map((_, i) => (
         <motion.div
           key={i}
@@ -58,7 +58,6 @@ export const Terminal = () => {
         />
       ))}
 
-      {/* Scanline overlay */}
       <div
         className="pointer-events-none absolute inset-0 z-20 opacity-[0.03]"
         style={{
@@ -66,7 +65,6 @@ export const Terminal = () => {
         }}
       />
 
-      {/* Subtle CRT vignette */}
       <div className="pointer-events-none absolute inset-0 z-10"
         style={{
           background: 'radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.6) 100%)',
