@@ -155,7 +155,7 @@ mathias-paulenko-cv/
 
 ---
 
-## � Credits & Acknowledgments
+## 🙏 Credits & Acknowledgments
 
 | Resource | Author / Owner |
 |----------|---------------|
@@ -172,7 +172,7 @@ mathias-paulenko-cv/
 
 ---
 
-## �📄 License
+## 📄 License
 
 Personal project — All rights reserved.
 
