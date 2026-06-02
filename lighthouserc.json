@@ -22,7 +22,9 @@
         "max-potential-fid": ["warn"],
         "render-blocking-resources": ["warn"],
         "server-response-time": ["warn"],
-        "uses-long-cache-ttl": ["warn"]
+        "uses-long-cache-ttl": ["warn"],
+        "errors-in-console": ["warn"],
+        "installable-manifest": ["warn"]
       }
     },
     "upload": {

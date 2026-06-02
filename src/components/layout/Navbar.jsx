@@ -154,6 +154,7 @@ export const Navbar = () => {
 
           <button
             onClick={toggleTheme}
+            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
             className="flex items-center gap-1.5 px-2 py-1 border border-[#2a2a2a] hover:border-[#ffb000] text-xs font-mono text-[#d0d0d0] hover:text-[#ffb000] transition-all duration-300"
             title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
           >
@@ -163,6 +164,7 @@ export const Navbar = () => {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           className="md:hidden p-2 text-[#d0d0d0] hover:text-[#ffb000] transition-colors"
         >
           {mobileOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
