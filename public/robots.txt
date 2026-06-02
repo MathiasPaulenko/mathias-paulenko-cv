@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mathiaspaulenko.com/sitemap.xml
+
+# Allow all crawlers
+Disallow:
