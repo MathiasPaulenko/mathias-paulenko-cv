@@ -70,9 +70,9 @@ export const Terminal = () => {
           <div className="flex items-center justify-between px-4 py-1.5 border-b border-[#2a2a2a] bg-[#141414]">
             <span className="text-[#999999] text-xs">mathias@dev ~ </span>
             <div className="flex gap-px">
-              <span className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#2a2a2a] text-xs cursor-default">─</span>
-              <span className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#2a2a2a] text-xs cursor-default">□</span>
-              <span className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#ff4444] hover:text-white text-xs cursor-default">✕</span>
+              <span aria-hidden="true" className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#2a2a2a] text-xs cursor-default">─</span>
+              <span aria-hidden="true" className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#2a2a2a] text-xs cursor-default">□</span>
+              <span aria-hidden="true" className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#ff4444] hover:text-white text-xs cursor-default">✕</span>
             </div>
           </div>
 

@@ -44,11 +44,12 @@ export const Experience = () => {
               {job.description}
             </p>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2" role="list">
               {experience[i]?.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-2 py-0.5 text-sm text-[#999999] border border-[#2a2a2a] font-mono hover:text-[#ffb000] hover:border-[#ffb000] transition-all duration-300 cursor-default"
+                  className="px-2 py-0.5 text-sm text-[#999999] border border-[#2a2a2a] font-mono hover:text-[#ffb000] hover:border-[#ffb000] transition-all duration-300"
+                  role="listitem"
                 >
                   # {tag}
                 </span>
