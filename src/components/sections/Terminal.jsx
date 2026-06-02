@@ -84,19 +84,21 @@ export const Terminal = () => {
             </motion.div>
 
             <motion.div variants={fadeInUp} custom={2} className="mb-8 text-center">
-              <pre
-                className="text-[#ffb000] text-[11px] md:text-sm overflow-x-auto inline-block text-left"
-                style={{
-                  fontFamily: "'Courier New', Courier, monospace",
-                  fontVariantLigatures: 'none',
-                  fontKerning: 'none',
-                  letterSpacing: '0px',
-                  lineHeight: '1.2',
-                  whiteSpace: 'pre',
-                  tabSize: 4,
-                }}
-              >
+              <div className="overflow-x-auto w-full flex justify-center">
+                <pre
+                  className="text-[#ffb000] text-[9px] sm:text-[11px] md:text-sm inline-block text-left"
+                  style={{
+                    fontFamily: "'Courier New', Courier, monospace",
+                    fontVariantLigatures: 'none',
+                    fontKerning: 'none',
+                    letterSpacing: '0px',
+                    lineHeight: '1.2',
+                    whiteSpace: 'pre',
+                    tabSize: 4,
+                  }}
+                >
 {"███╗   ███╗ █████╗ ████████╗██╗  ██╗██╗ █████╗ ███████╗\n████╗ ████║██╔══██╗╚══██╔══╝██║  ██║██║██╔══██╗██╔════╝\n██╔████╔██║███████║   ██║   ███████║██║███████║███████╗\n██║╚██╔╝██║██╔══██║   ██║   ██╔══██║██║██╔══██║╚════██║\n██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║██║██║  ██║███████║\n╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝"}</pre>
+              </div>
               <h1 className="text-[#ffb000] font-bold text-sm mt-3 tracking-[0.3em]">
                 VLADIMIR
               </h1>
