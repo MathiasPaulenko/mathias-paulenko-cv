@@ -84,9 +84,9 @@ export const Terminal = () => {
             </motion.div>
 
             <motion.div variants={fadeInUp} custom={2} className="mb-8 text-center">
-              <div className="overflow-x-auto w-full flex justify-center">
+              <div className="hidden sm:block overflow-x-auto w-full flex justify-center">
                 <pre
-                  className="text-[#ffb000] text-[9px] sm:text-[11px] md:text-sm inline-block text-left"
+                  className="text-[#ffb000] text-[11px] md:text-sm inline-block text-left"
                   style={{
                     fontFamily: "'Courier New', Courier, monospace",
                     fontVariantLigatures: 'none',
@@ -99,6 +99,9 @@ export const Terminal = () => {
                 >
 {"███╗   ███╗ █████╗ ████████╗██╗  ██╗██╗ █████╗ ███████╗\n████╗ ████║██╔══██╗╚══██╔══╝██║  ██║██║██╔══██╗██╔════╝\n██╔████╔██║███████║   ██║   ███████║██║███████║███████╗\n██║╚██╔╝██║██╔══██║   ██║   ██╔══██║██║██╔══██║╚════██║\n██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║██║██║  ██║███████║\n╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝"}</pre>
               </div>
+              <h1 className="sm:hidden text-[#ffb000] font-mono font-bold text-3xl tracking-[0.15em] mb-1">
+                MATHIAS
+              </h1>
               <h1 className="text-[#ffb000] font-bold text-sm mt-3 tracking-[0.3em]">
                 VLADIMIR
               </h1>
