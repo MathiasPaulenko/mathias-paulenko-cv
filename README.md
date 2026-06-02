@@ -158,8 +158,6 @@ mathias-paulenko-cv/
 |---------|------|-------|
 | Custom domain | `public/CNAME` | `mathiaspaulenko.com` |
 | Base URL | `vite.config.js` | `/` |
-| DNS (A records) | Dinahosting | `185.199.108-111.153` |
-| DNS (CNAME) | Dinahosting | `www` → `MathiasPaulenko.github.io` |
 
 ---
 

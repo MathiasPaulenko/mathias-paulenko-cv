@@ -73,4 +73,4 @@ Always include `target="_blank" rel="noopener noreferrer"`
 
 - Build must pass before commit: `npm run build`
 - Deploy via GitHub Actions on push to main
-- Domain: mathiaspaulenko.com (DNS at Dinahosting)
+- Domain: mathiaspaulenko.com
