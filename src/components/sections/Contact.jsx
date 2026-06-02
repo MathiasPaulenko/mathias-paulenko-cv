@@ -1,7 +1,9 @@
 import { useTranslation } from '../../hooks/useTranslation'
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, FileDown } from 'lucide-react'
 import { personalInfo } from '../../data/cvData'
 import { fadeInUp, staggerContainer } from '../../helpers/animations'
+import { CopyButton } from '../ui/CopyButton'
+import { ShareButtons } from '../ui/ShareButtons'
 import { motion } from 'framer-motion'
 
 export const Contact = () => {
@@ -72,7 +74,7 @@ export const Contact = () => {
               <span className="text-[#d0d0d0]">cat contact_info.sh</span>
             </motion.div>
 
-            <motion.div variants={fadeInUp} custom={3} className="flex flex-wrap gap-3">
+            <motion.div variants={fadeInUp} custom={3} className="flex flex-wrap gap-3 mb-6">
               <a
                 href={personalInfo.linkedin}
                 target="_blank"
@@ -91,16 +93,32 @@ export const Contact = () => {
                 <Github className="w-4 h-4" />
                 <span className="text-xs">./github.sh</span>
               </a>
-              <a
-                href={`mailto:${personalInfo.email}`}
-                className="flex items-center gap-2 px-4 py-2 border border-[#3a3a3a] hover:border-[#ff4444] hover:text-[#ff4444] text-[#d0d0d0] transition-all duration-300"
-              >
-                <Mail className="w-4 h-4" />
-                <span className="text-xs">./email.sh</span>
-              </a>
+              <CopyButton text={personalInfo.email} label="email.sh" />
             </motion.div>
 
-            <motion.div variants={fadeInUp} custom={4} className="mt-8">
+            <motion.div variants={fadeInUp} custom={4} className="mb-6">
+              <span className="text-[#33ff33]">mathias@dev</span>
+              <span className="text-[#7a7a7a]">:</span>
+              <span className="text-[#6688cc]">~</span>
+              <span className="text-[#7a7a7a]">$ </span>
+              <span className="text-[#d0d0d0]">wget cv.pdf</span>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} custom={5} className="flex flex-wrap gap-3 mb-6">
+              <button
+                onClick={() => window.print()}
+                className="flex items-center gap-2 px-4 py-2 border border-[#3a3a3a] hover:border-[#ffb000] hover:text-[#ffb000] text-[#d0d0d0] transition-all duration-300"
+              >
+                <FileDown className="w-4 h-4" />
+                <span className="text-xs">./download_cv.sh</span>
+              </button>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} custom={6}>
+              <ShareButtons />
+            </motion.div>
+
+            <motion.div variants={fadeInUp} custom={7} className="mt-8">
               <span className="text-[#33ff33]">mathias@dev</span>
               <span className="text-[#7a7a7a]">:</span>
               <span className="text-[#6688cc]">~</span>
