@@ -23,6 +23,7 @@ export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
   const { lang, setLang } = useLanguage()
   const { theme, toggleTheme } = useTheme()
   const langRef = useRef(null)
@@ -41,6 +42,26 @@ export const Navbar = () => {
     }
     document.addEventListener('mousedown', handleClick)
     return () => document.removeEventListener('mousedown', handleClick)
+  }, [])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        })
+      },
+      { rootMargin: '-50% 0px -50% 0px', threshold: 0 }
+    )
+
+    navLinks.forEach((link) => {
+      const section = document.querySelector(link.href)
+      if (section) observer.observe(section)
+    })
+
+    return () => observer.disconnect()
   }, [])
 
   const currentFlag = langOptions.find((l) => l.code === lang)?.flag || 'gb'
@@ -63,15 +84,22 @@ export const Navbar = () => {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="text-xs font-mono text-[#d0d0d0] hover:text-[#ffb000] transition-colors duration-300"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = activeSection === link.href.replace('#', '')
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                className={`text-xs font-mono transition-colors duration-300 ${
+                  isActive
+                    ? 'text-[#ffb000] border-b border-[#ffb000]'
+                    : 'text-[#d0d0d0] hover:text-[#ffb000]'
+                }`}
+              >
+                {link.label}
+              </a>
+            )
+          })}
 
           {/* Language dropdown */}
           <div className="relative" ref={langRef}>
@@ -151,16 +179,23 @@ export const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden bg-[#0c0c0c]/95 backdrop-blur-sm border-b border-[#2a2a2a] px-4 pb-4"
         >
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 text-xs font-mono text-[#d0d0d0] hover:text-[#ffb000] transition-colors border-b border-[#2a2a2a]/50"
-            >
-              <span className="text-[#33ff33]">$ </span>{link.label}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = activeSection === link.href.replace('#', '')
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className={`block py-2 text-xs font-mono transition-colors border-b border-[#2a2a2a]/50 ${
+                  isActive
+                    ? 'text-[#ffb000]'
+                    : 'text-[#d0d0d0] hover:text-[#ffb000]'
+                }`}
+              >
+                <span className={isActive ? 'text-[#ffb000]' : 'text-[#33ff33]'}>$ </span>{link.label}
+              </a>
+            )
+          })}
           <div className="flex items-center gap-2 py-2">
             {langOptions.map((opt) => (
               <button
