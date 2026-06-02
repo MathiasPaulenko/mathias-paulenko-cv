@@ -64,9 +64,7 @@ export const Terminal = () => {
         animate="visible"
         className="relative z-10 px-4 md:px-6 max-w-6xl w-full"
       >
-        {/* Terminal window */}
         <motion.div variants={fadeInUp} className="border border-[#2a2a2a] bg-[#0c0c0c]">
-          {/* Title bar */}
           <div className="flex items-center justify-between px-4 py-1.5 border-b border-[#2a2a2a] bg-[#141414]">
             <span className="text-[#999999] text-xs">mathias@dev ~ </span>
             <div className="flex gap-px">
@@ -76,7 +74,6 @@ export const Terminal = () => {
             </div>
           </div>
 
-          {/* Terminal body */}
           <div className="p-6 md:p-8 font-mono text-sm leading-relaxed">
             <motion.div variants={fadeInUp} custom={0} className="mb-6">
               <span className="text-[#33ff33]">mathias@dev</span>

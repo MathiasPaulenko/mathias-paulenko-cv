@@ -164,21 +164,16 @@ body {
 .light .hover\:bg-\[\#ff4444\]:hover { background-color: var(--color-red) !important; }
 .light .hover\:bg-\[\#1a1a1a\]:hover { background-color: #e5e7eb !important; }
 
-/* Glow line */
 .light .glow-line { background: linear-gradient(to right, transparent, rgba(180,83,9,0.15), transparent) !important; }
 
-/* Selection */
 .light ::selection { background: var(--color-amber); color: #ffffff; }
 
-/* Scrollbar */
 .light ::-webkit-scrollbar-track { background: var(--color-bg); }
 .light ::-webkit-scrollbar-thumb { background: #d1d5db; }
 .light ::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
 
-/* Scanlines and particles - reduce in light mode */
 .light .pointer-events-none.absolute.inset-0 { opacity: 0 !important; }
 
-/* Respect user preference for reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -190,9 +185,7 @@ body {
   }
 }
 
-/* Print styles */
 @media print {
-  /* Hide decorative elements */
   nav,
   .glow-line,
   .pointer-events-none,
@@ -200,7 +193,6 @@ body {
     display: none !important;
   }
 
-  /* Reset background and colors for printing */
   body {
     background: white !important;
     color: black !important;
@@ -208,33 +200,28 @@ body {
     line-height: 1.5;
   }
 
-  /* Ensure sections are visible */
   section {
     page-break-inside: avoid;
     break-inside: avoid;
     padding: 1rem 0 !important;
   }
 
-  /* Make links visible with their URLs */
   a[href]:after {
     content: " (" attr(href) ")";
     font-size: 0.8em;
     color: #666;
   }
 
-  /* Remove borders and backgrounds from cards */
   .border,
   [class*="border-"] {
     border: 1px solid #ccc !important;
     background: white !important;
   }
 
-  /* Ensure text is readable */
   [class*="text-[#"] {
     color: black !important;
   }
 
-  /* Show all content */
   main {
     padding-top: 0 !important;
   }

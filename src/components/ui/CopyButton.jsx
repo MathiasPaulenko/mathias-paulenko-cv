@@ -10,7 +10,6 @@ export const CopyButton = ({ text, label }) => {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
     } catch {
-      // Fallback
       const textarea = document.createElement('textarea')
       textarea.value = text
       document.body.appendChild(textarea)

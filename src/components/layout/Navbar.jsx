@@ -82,7 +82,6 @@ export const Navbar = () => {
           ~/mathias<span className="text-[#33ff33]">$</span>
         </a>
 
-        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => {
             const isActive = activeSection === link.href.replace('#', '')
@@ -101,7 +100,6 @@ export const Navbar = () => {
             )
           })}
 
-          {/* Language dropdown */}
           <div className="relative" ref={langRef}>
             <button
               onClick={() => setLangOpen(!langOpen)}
@@ -163,7 +161,6 @@ export const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden p-2 text-[#d0d0d0] hover:text-[#ffb000] transition-colors"
@@ -172,7 +169,6 @@ export const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
