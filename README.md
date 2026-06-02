@@ -1,21 +1,28 @@
 <div align="center">
 
-```
-╔══════════════════════════════════════════════════════════╗
-║                                                          ║
-║   ~/mathias$ cat portfolio.config                        ║
-║                                                          ║
-║   > name     = "Mathias Paulenko"                        ║
-║   > role     = "Project Leader & Test Architect"         ║
-║   > stack    = "Python · React · Full Stack"             ║
-║   > status   = "Open to opportunities"                   ║
-║                                                          ║
-╚══════════════════════════════════════════════════════════╝
-```
+<!-- Animated header banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0c0c0c,50:00cccc,100:33ff33&height=180&section=header&text=mathias-paulenko-cv&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35" alt="mathias-paulenko-cv header" />
 
-[![Live Site](https://img.shields.io/badge/🌐_Live-mathiaspaulenko.com-ffb000?style=for-the-badge&labelColor=0c0c0c)](https://mathiaspaulenko.com)
+<!-- Typing animation -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=20&duration=3000&pause=1000&color=33FF33&center=true&vCenter=true&width=600&lines=Terminal+Themed+Portfolio;React+%2B+Vite+%2B+Tailwind;GitHub+Pages+Deployment;Multilingual+Support" alt="Terminal themed portfolio with React, Vite, Tailwind, GitHub Pages deployment and multilingual support" />
+</a>
+
+<br/><br/>
+
+[![Live Site](https://img.shields.io/badge/🌐_Live-mathiaspaulenko.com-00cccc?style=for-the-badge&labelColor=0c0c0c)](https://mathiaspaulenko.com)
 [![Deploy](https://img.shields.io/github/actions/workflow/status/MathiasPaulenko/mathias-paulenko-cv/deploy.yml?style=for-the-badge&label=deploy&labelColor=0c0c0c&color=33ff33)](https://github.com/MathiasPaulenko/mathias-paulenko-cv/actions)
 [![License](https://img.shields.io/badge/license-All_Rights_Reserved-ff4444?style=for-the-badge&labelColor=0c0c0c)](./LICENSE)
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  ~/mathias$ cat portfolio.config                         ║
+║  > name   = "Mathias Paulenko"                           ║
+║  > role   = "Project Leader & Test Architect"            ║
+║  > stack  = "Python · React · Full Stack"                ║
+║  > status = "Open to opportunities"                      ║
+╚══════════════════════════════════════════════════════════╝
+```
 
 </div>
 
@@ -167,5 +174,8 @@ Personal project — All rights reserved.
 ```
 $ echo "Mathias Paulenko 2026"
 ```
+
+<!-- Animated footer banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:33ff33,50:00cccc,100:0c0c0c&height=100&section=footer" alt="footer" />
 
 </div>
