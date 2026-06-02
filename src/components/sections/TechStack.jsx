@@ -82,7 +82,7 @@ export const TechStack = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 border border-[#2a2a2a] text-sm hover:border-[#ffb000] hover:text-[#ffb000] text-[#b8b8b8] transition-all duration-300 cursor-default"
               >
                 {item.icon ? (
-                  <img src={item.icon} alt={item.name} className="w-5 h-5" />
+                  <img loading="lazy" src={item.icon} alt={item.name} className="w-5 h-5" />
                 ) : (
                   <span className="w-2 h-2 rounded-full" style={{ backgroundColor: item.color }} />
                 )}

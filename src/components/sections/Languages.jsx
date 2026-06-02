@@ -63,6 +63,7 @@ export const Languages = () => {
             <motion.div key={i} variants={fadeInUp} custom={i}>
               <div className="flex items-center gap-3 mb-3">
                 <img
+                  loading="lazy"
                   src={`https://flagcdn.com/24x18/${lang.code}.png`}
                   srcSet={`https://flagcdn.com/48x36/${lang.code}.png 2x`}
                   width="24"

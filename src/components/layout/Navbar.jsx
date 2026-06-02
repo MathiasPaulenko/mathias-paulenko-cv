@@ -80,6 +80,7 @@ export const Navbar = () => {
               className="flex items-center gap-1.5 px-2 py-1 border border-[#2a2a2a] hover:border-[#ffb000] text-xs font-mono text-[#d0d0d0] hover:text-[#ffb000] transition-all duration-300"
             >
               <img
+                loading="lazy"
                 src={`https://flagcdn.com/16x12/${currentFlag}.png`}
                 width="16"
                 height="12"
@@ -110,6 +111,7 @@ export const Navbar = () => {
                       }`}
                     >
                       <img
+                        loading="lazy"
                         src={`https://flagcdn.com/16x12/${opt.flag}.png`}
                         width="16"
                         height="12"

@@ -1,19 +1,8 @@
 import { useTranslation } from '../../hooks/useTranslation'
 import { SectionWrapper } from '../ui/SectionWrapper'
 import { fadeInUp, staggerContainer } from '../../helpers/animations'
+import { Flag } from '../ui/Flag'
 import { motion } from 'framer-motion'
-
-const Flag = ({ code, alt }) => (
-  <img
-    src={`https://flagcdn.com/20x15/${code}.png`}
-    srcSet={`https://flagcdn.com/40x30/${code}.png 2x`}
-    width="20"
-    height="15"
-    alt={alt}
-    className="inline-block align-middle mx-1"
-    style={{ verticalAlign: 'middle' }}
-  />
-)
 
 export const About = () => {
   const t = useTranslation()
