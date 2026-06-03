@@ -349,7 +349,7 @@
       { name: 'Fundamentos de Programación Java', hours: '4h' },
       { name: 'Curso Básico de Chino', hours: '4h' },
       { name: 'Habilidades Comunicativas', hours: '3h' },
-      { name: 'Scrum Master + Liderazgo de Equipos Ãgiles', hours: '3h' },
+      { name: 'Scrum Master + Liderazgo de Equipos Ágiles', hours: '3h' },
       { name: 'Programación Lógica: Aprende a Programar en Cualquier Lenguaje', hours: '3h' },
       { name: 'Coaching de Liderazgo', hours: '3h' },
       { name: 'Creación de Backdoors con Python', hours: '3h' },
