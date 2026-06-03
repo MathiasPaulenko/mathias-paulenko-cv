@@ -11,7 +11,7 @@ const ProgressBar = ({ filled, color, delay }) => {
 
   return (
     <div className="flex items-center gap-px md:gap-0.5 font-mono text-[10px] md:text-xs">
-      <span className="text-[#7a7a7a]">[</span>
+      <span className="text-[#8f8f8f]">[</span>
       {blocks.map((active, i) => (
         <motion.span
           key={i}
@@ -28,9 +28,9 @@ const ProgressBar = ({ filled, color, delay }) => {
           {active ? '█' : '░'}
         </motion.span>
       ))}
-      <span className="text-[#7a7a7a]">]</span>
+      <span className="text-[#8f8f8f]">]</span>
       <motion.span
-        className="text-[#7a7a7a] ml-1 md:ml-2"
+        className="text-[#8f8f8f] ml-1 md:ml-2"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

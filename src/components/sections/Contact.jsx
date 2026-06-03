@@ -42,7 +42,7 @@ export const Contact = () => {
           className="border border-[#2a2a2a] bg-[#0c0c0c]"
         >
           <div className="flex items-center justify-between px-4 py-1.5 border-b border-[#2a2a2a] bg-[#141414]">
-            <span className="text-[#7a7a7a] text-xs">contact — ping</span>
+            <span className="text-[#8f8f8f] text-xs">contact — ping</span>
             <div className="flex gap-px">
               <span aria-hidden="true" className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#2a2a2a] text-xs cursor-default">─</span>
               <span aria-hidden="true" className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#2a2a2a] text-xs cursor-default">□</span>
@@ -53,9 +53,9 @@ export const Contact = () => {
           <div className="p-6 md:p-8">
             <motion.div variants={fadeInUp} className="mb-6">
               <span className="text-[#33ff33]">mathias@dev</span>
-              <span className="text-[#7a7a7a]">:</span>
+              <span className="text-[#8f8f8f]">:</span>
               <span className="text-[#6688cc]">~</span>
-              <span className="text-[#7a7a7a]">$ </span>
+              <span className="text-[#8f8f8f]">$ </span>
               <span className="text-[#d0d0d0]">echo "{t.contactTitle}"</span>
             </motion.div>
 
@@ -68,9 +68,9 @@ export const Contact = () => {
 
             <motion.div variants={fadeInUp} custom={2} className="mb-6">
               <span className="text-[#33ff33]">mathias@dev</span>
-              <span className="text-[#7a7a7a]">:</span>
+              <span className="text-[#8f8f8f]">:</span>
               <span className="text-[#6688cc]">~</span>
-              <span className="text-[#7a7a7a]">$ </span>
+              <span className="text-[#8f8f8f]">$ </span>
               <span className="text-[#d0d0d0]">cat contact_info.sh</span>
             </motion.div>
 
@@ -98,9 +98,9 @@ export const Contact = () => {
 
             <motion.div variants={fadeInUp} custom={4} className="mb-6">
               <span className="text-[#33ff33]">mathias@dev</span>
-              <span className="text-[#7a7a7a]">:</span>
+              <span className="text-[#8f8f8f]">:</span>
               <span className="text-[#6688cc]">~</span>
-              <span className="text-[#7a7a7a]">$ </span>
+              <span className="text-[#8f8f8f]">$ </span>
               <span className="text-[#d0d0d0]">wget cv.pdf</span>
             </motion.div>
 
@@ -120,9 +120,9 @@ export const Contact = () => {
 
             <motion.div variants={fadeInUp} custom={7} className="mt-8">
               <span className="text-[#33ff33]">mathias@dev</span>
-              <span className="text-[#7a7a7a]">:</span>
+              <span className="text-[#8f8f8f]">:</span>
               <span className="text-[#6688cc]">~</span>
-              <span className="text-[#7a7a7a]">$ </span>
+              <span className="text-[#8f8f8f]">$ </span>
               <span className="cursor-blink" />
             </motion.div>
           </div>

@@ -33,7 +33,7 @@ export const TechStack = () => {
     <SectionWrapper id="skills" title={t.sectionSkills} subtitle={t.sectionSkillsSub}>
       <div className="border border-[#2a2a2a] bg-[#0c0c0c]">
         <div className="flex items-center justify-between px-4 py-1.5 border-b border-[#2a2a2a] bg-[#141414]">
-          <span className="text-[#7a7a7a] text-xs">skills — ls -la</span>
+          <span className="text-[#8f8f8f] text-xs">skills — ls -la</span>
           <div className="flex gap-px">
             <span aria-hidden="true" className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#2a2a2a] text-xs cursor-default">─</span>
             <span aria-hidden="true" className="w-6 h-5 flex items-center justify-center text-[#d0d0d0] hover:bg-[#2a2a2a] text-xs cursor-default">□</span>

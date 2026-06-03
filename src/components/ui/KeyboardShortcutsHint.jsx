@@ -20,7 +20,7 @@ export const KeyboardShortcutsHint = () => {
       {!open ? (
         <button
           onClick={() => setOpen(true)}
-          className="flex items-center gap-1.5 px-2 py-1.5 border border-[#2a2a2a] bg-[#0c0c0c] text-[#7a7a7a] hover:text-[#ffb000] hover:border-[#ffb000] transition-all duration-300 text-xs font-mono"
+          className="flex items-center gap-1.5 px-2 py-1.5 border border-[#2a2a2a] bg-[#0c0c0c] text-[#8f8f8f] hover:text-[#ffb000] hover:border-[#ffb000] transition-all duration-300 text-xs font-mono"
           aria-label="Show keyboard shortcuts"
           title="Keyboard shortcuts"
         >
@@ -33,7 +33,7 @@ export const KeyboardShortcutsHint = () => {
             <span className="text-[#ffb000] text-xs font-mono font-bold">Keyboard Shortcuts</span>
             <button
               onClick={() => setOpen(false)}
-              className="text-[#7a7a7a] hover:text-[#ff4444] transition-colors"
+              className="text-[#8f8f8f] hover:text-[#ff4444] transition-colors"
               aria-label="Close"
             >
               <X size={14} />
