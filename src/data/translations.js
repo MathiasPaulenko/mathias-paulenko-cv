@@ -199,6 +199,12 @@
 
     contactTitle: "Let's work together",
     contactDesc: "I'm always open to interesting conversations, collaborations, and new opportunities.",
+
+    cookieText: 'This site uses cookies to analyze traffic and improve your experience.',
+    cookiePolicyLink: 'Privacy Policy',
+    cookieAccept: 'Accept',
+    cookieDecline: 'Decline',
+    privacyPolicyTitle: 'Privacy Policy',
   },
 
   es: {
@@ -401,6 +407,12 @@
 
     contactTitle: 'Trabajemos juntos',
     contactDesc: 'Siempre estoy abierto a conversaciones interesantes, colaboraciones y nuevas oportunidades.',
+
+    cookieText: 'Este sitio utiliza cookies para analizar el tráfico y mejorar tu experiencia.',
+    cookiePolicyLink: 'Política de Privacidad',
+    cookieAccept: 'Aceptar',
+    cookieDecline: 'Rechazar',
+    privacyPolicyTitle: 'Política de Privacidad',
   },
 
   zh: {
@@ -602,6 +614,10 @@
     heroBirthdateLabel: 'å‡ºç”Ÿæ—¥æœŸ',
 
     contactTitle: 'ä¸€èµ·åˆä½œå§',
-    contactDesc: 'æˆ‘éšæ—¶æ¬¢è¿Žæœ‰è¶£çš„å¯¹è¯ã€åˆä½œå’Œæ–°çš„æœºä¼šã€‚',
+    cookieText: '本网站使用 Cookie 来分析流量并改善您的体验。',
+    cookiePolicyLink: '隐私政策',
+    cookieAccept: '接受',
+    cookieDecline: '拒绝',
+    privacyPolicyTitle: '隐私政策',
   },
 }
