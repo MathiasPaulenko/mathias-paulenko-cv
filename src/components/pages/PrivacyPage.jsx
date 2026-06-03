@@ -11,7 +11,7 @@ export const PrivacyPage = () => {
     <div className="min-h-screen bg-[#0c0c0c] text-[#d0d0d0]">
       <Navbar />
 
-      <main className="max-w-4xl mx-auto px-4 md:px-6 pt-28 pb-16">
+      <main role="main" className="max-w-4xl mx-auto px-4 md:px-6 pt-28 pb-16">
         <motion.div
           variants={fadeInUp}
           initial="hidden"

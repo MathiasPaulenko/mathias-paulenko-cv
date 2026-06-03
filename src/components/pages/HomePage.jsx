@@ -15,7 +15,7 @@ export const HomePage = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main role="main">
         <Terminal />
         <div className="glow-line" />
         <About />
