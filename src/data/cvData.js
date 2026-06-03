@@ -39,6 +39,9 @@ export const techStack = {
     { name: 'Angular', color: '#DD0031' },
     { name: 'Bootstrap', color: '#7952B3' },
     { name: 'Tailwind CSS', color: '#06B6D4' },
+    { name: 'Astro', color: '#FF5D01' },
+    { name: 'Framer Motion', color: '#0055FF' },
+    { name: 'Lucide', color: '#F43F5E' },
     { name: 'Jinja2', color: '#B41717' },
     { name: 'Tkinter', color: '#3776AB' },
   ],
@@ -100,6 +103,7 @@ export const techStack = {
     { name: 'OpenShift', color: '#EE0000' },
     { name: 'Kubernetes', color: '#326CE5' },
     { name: 'Bitbucket', color: '#0052CC' },
+    { name: 'GitHub Actions', color: '#2088FF' },
   ],
   aiMlTools: [
     { name: 'TensorFlow', color: '#FF6F00' },
