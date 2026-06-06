@@ -43,6 +43,12 @@
     portfolioSectionTitle: 'My Portfolio',
     portfolioSectionDesc: 'Explore all my projects, experiments and case studies in one place.',
     portfolioSectionCta: 'cd portfolio/',
+    tabLibraries: 'libraries/',
+    tabWebs: 'webs/',
+    librariesPlaceholder: 'Libraries & Packages',
+    librariesPlaceholderDesc: 'Reusable libraries, CLI tools and Python packages. Coming soon.',
+    websPlaceholder: 'Websites & Web Apps',
+    websPlaceholderDesc: 'Full websites, landing pages and web applications. Coming soon.',
 
     experience: [
       {
@@ -263,6 +269,12 @@
     portfolioSectionTitle: 'Mi Portfolio',
     portfolioSectionDesc: 'Explora todos mis proyectos, experimentos y casos de estudio en un solo lugar.',
     portfolioSectionCta: 'cd portfolio/',
+    tabLibraries: 'librerías/',
+    tabWebs: 'webs/',
+    librariesPlaceholder: 'Librerías y Paquetes',
+    librariesPlaceholderDesc: 'Librerías reutilizables, herramientas CLI y paquetes Python. Próximamente.',
+    websPlaceholder: 'Webs y Aplicaciones Web',
+    websPlaceholderDesc: 'Sitios web completos, landing pages y aplicaciones web. Próximamente.',
 
     experience: [
       {
@@ -483,6 +495,12 @@
     portfolioSectionTitle: '我的作品集',
     portfolioSectionDesc: '在一个地方探索我的所有项目、实验和案例研究。',
     portfolioSectionCta: 'cd portfolio/',
+    tabLibraries: '库/',
+    tabWebs: '网站/',
+    librariesPlaceholder: '库与包',
+    librariesPlaceholderDesc: '可复用的库、CLI工具和Python包。即将上线。',
+    websPlaceholder: '网站与Web应用',
+    websPlaceholderDesc: '完整的网站、落地页和Web应用。即将上线。',
 
     experience: [
       {
