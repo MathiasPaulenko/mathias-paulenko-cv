@@ -29,7 +29,7 @@
 | ✨ **Animated** | Framer Motion entrance, scroll-triggered animations, staggered lists |
 | ⌨️ **Keyboard Shortcuts** | Navigate sections with H, A, S, E, D, C, L, N and scroll to top with Home key; visible shortcuts hint UI |
 | 🔝 **Scroll to Top** | Floating button appears on scroll |
-| 🔗 **Share** | Twitter, LinkedIn and Copy URL buttons |
+| � **Portfolio** | Inline tabbed section with libraries/webs, pagination, terminal-styled cards |
 | 📋 **Copy to Clipboard** | One-click copy for email, phone and URL |
 | 🖨️ **Print Optimized** | Skills section auto-expands all categories when printing |
 | 🧭 **ScrollSpy Navbar** | Active section highlighting on scroll with smooth anchor navigation |
@@ -122,10 +122,10 @@ mathias-paulenko-cv/
 ├── src/
 │   ├── components/
 │   │   ├── layout/       # Navbar, Footer
-│   │   ├── pages/        # HomePage
+│   │   ├── pages/        # HomePage, PrivacyPage, NotFound
 │   │   ├── sections/     # Terminal, About, TechStack, Experience,
-│   │   │                 # Education, Certifications, Languages, Contact
-│   │   └── ui/           # SectionWrapper
+│   │   │                 # Education, Certifications, Portfolio, Languages, Contact
+│   │   └── ui/           # SectionWrapper, CookieBanner, CopyButton, ScrollToTop
 │   ├── data/
 │   │   ├── cvData.js     # CV content (tags, tech stack, projects)
 │   │   └── translations.js  # i18n (EN / ES / ZH)
