@@ -402,6 +402,15 @@ export const portfolio = {
       license: 'MIT',
     },
     {
+      title: 'python-selenium-examples',
+      tagline: 'Comprehensive Selenium WebDriver 4 examples in Python.',
+      description: 'Self-contained runnable examples covering browsers, drivers, elements, waits, interactions, actions, BiDi/CDP, and more. Each module includes a private _build_driver() helper and follows a consistent pattern for learning and reference.',
+      tech: ['Python', 'Selenium 4', 'WebDriver Manager'],
+      github: 'https://github.com/MathiasPaulenko/python-selenium-examples',
+      version: '1.0.0',
+      license: 'GPL-3.0',
+    },
+    {
       title: 'ai-toolkit',
       tagline: 'Curated collection of AI prompts, skills, agents, rules, workflows and tools.',
       description: 'Organized resource library for LLM-powered development with Cursor, Devin, Windsurf and other AI IDEs. Includes 64 prompts, 11 skills, 7 agents, 14 rules, 15 workflows and various utilities.',
