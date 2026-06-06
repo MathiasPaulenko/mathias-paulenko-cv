@@ -15,7 +15,7 @@ import {
   Package,
 } from 'lucide-react'
 
-const LibraryCard = ({ item }) => {
+const ProjectCard = ({ item }) => {
   return (
     <motion.div
       variants={fadeInUp}
@@ -27,13 +27,17 @@ const LibraryCard = ({ item }) => {
             <span className="text-[#ffb000] font-mono text-sm font-bold">
               {item.title}
             </span>
-            <span className="text-[#33ff33] font-mono text-xs border border-[#2a2a2a] px-1.5 py-0.5">
-              v{item.version}
-            </span>
+            {item.version && (
+              <span className="text-[#33ff33] font-mono text-xs border border-[#2a2a2a] px-1.5 py-0.5">
+                v{item.version}
+              </span>
+            )}
           </div>
-          <p className="text-[#999999] font-mono text-xs">
-            {item.license} license
-          </p>
+          {item.license && (
+            <p className="text-[#999999] font-mono text-xs">
+              {item.license} license
+            </p>
+          )}
         </div>
       </div>
 
@@ -62,6 +66,17 @@ const LibraryCard = ({ item }) => {
           >
             <Github size={12} />
             source
+          </a>
+        )}
+        {item.liveUrl && (
+          <a
+            href={item.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-[#6688cc] hover:text-[#33ff33] transition-colors font-mono text-xs"
+          >
+            <ExternalLink size={12} />
+            live
           </a>
         )}
         {item.pypi && (
@@ -173,7 +188,7 @@ export const PortfolioPage = () => {
                     {items.length > 0 ? (
                       <div className="grid gap-4">
                         {items.map((item) => (
-                          <LibraryCard key={item.title} item={item} />
+                          <ProjectCard key={item.title} item={item} />
                         ))}
                       </div>
                     ) : (
@@ -197,7 +212,7 @@ export const PortfolioPage = () => {
                     {items.length > 0 ? (
                       <div className="grid gap-4">
                         {items.map((item) => (
-                          <LibraryCard key={item.title} item={item} />
+                          <ProjectCard key={item.title} item={item} />
                         ))}
                       </div>
                     ) : (
