@@ -387,3 +387,20 @@ export const projects = [
 
   },
 ]
+
+export const portfolio = {
+  libraries: [
+    {
+      title: 'pixopt',
+      tagline: 'Fast Python image optimizer for modern web workflows.',
+      description: 'CLI and Python API to resize, compress, convert formats, generate responsive assets, extract lazy-loading placeholders, and auto-detect optimal formats. Supports JPEG, PNG, WEBP, AVIF, GIF, HEIC, SVG and animated GIF → WEBP conversion.',
+      tech: ['Python', 'Pillow', 'Typer', 'Rich', 'Piexif', 'MkDocs', 'Pytest', 'Ruff', 'MyPy'],
+      github: 'https://github.com/MathiasPaulenko/pixopt',
+      pypi: 'https://pypi.org/project/pixopt/',
+      docs: 'https://pixopt.readthedocs.io/',
+      version: '1.0.7',
+      license: 'MIT',
+    },
+  ],
+  webs: [],
+}

@@ -1,11 +1,109 @@
 import { useState } from 'react'
 import { useTranslation } from '../../hooks/useTranslation'
+import { portfolio } from '../../data/cvData'
 import { Navbar } from '../layout/Navbar'
 import { Footer } from '../layout/Footer'
 import { motion, AnimatePresence } from 'framer-motion'
 import { fadeInUp } from '../../helpers/animations'
 import { Link } from 'react-router-dom'
-import { FolderOpen, Code2, Globe } from 'lucide-react'
+import {
+  Code2,
+  Globe,
+  Github,
+  ExternalLink,
+  BookOpen,
+  Package,
+} from 'lucide-react'
+
+const LibraryCard = ({ item }) => {
+  return (
+    <motion.div
+      variants={fadeInUp}
+      className="border border-[#2a2a2a] bg-[#0c0c0c] p-5 md:p-6 transition-all duration-300 hover:border-[#3a3a3a]"
+    >
+      <div className="flex items-start justify-between gap-3 mb-3">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-[#ffb000] font-mono text-sm font-bold">
+              {item.title}
+            </span>
+            <span className="text-[#33ff33] font-mono text-xs border border-[#2a2a2a] px-1.5 py-0.5">
+              v{item.version}
+            </span>
+          </div>
+          <p className="text-[#999999] font-mono text-xs">
+            {item.license} license
+          </p>
+        </div>
+      </div>
+
+      <p className="text-[#d0d0d0] text-sm leading-relaxed mb-4">
+        {item.tagline}
+      </p>
+
+      <div className="flex flex-wrap gap-2 mb-4">
+        {item.tech.map((tag) => (
+          <span
+            key={tag}
+            className="text-[#999999] font-mono text-xs border border-[#2a2a2a] px-2 py-0.5"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      <div className="flex flex-wrap gap-3">
+        {item.github && (
+          <a
+            href={item.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-[#6688cc] hover:text-[#33ff33] transition-colors font-mono text-xs"
+          >
+            <Github size={12} />
+            source
+          </a>
+        )}
+        {item.pypi && (
+          <a
+            href={item.pypi}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-[#6688cc] hover:text-[#33ff33] transition-colors font-mono text-xs"
+          >
+            <Package size={12} />
+            pypi
+          </a>
+        )}
+        {item.docs && (
+          <a
+            href={item.docs}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-[#6688cc] hover:text-[#33ff33] transition-colors font-mono text-xs"
+          >
+            <BookOpen size={12} />
+            docs
+          </a>
+        )}
+      </div>
+    </motion.div>
+  )
+}
+
+const EmptyState = ({ icon: Icon, title, desc }) => (
+  <motion.div
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    exit="hidden"
+    className="text-center py-12"
+  >
+    <Icon size={40} className="mx-auto text-[#999999] mb-4" />
+    <h3 className="text-lg font-bold text-[#d0d0d0] mb-2">{title}</h3>
+    <p className="text-[#999999] font-mono text-sm max-w-md mx-auto">{desc}</p>
+  </motion.div>
+)
 
 export const PortfolioPage = () => {
   const t = useTranslation()
@@ -15,6 +113,8 @@ export const PortfolioPage = () => {
     { id: 'libraries', label: t.tabLibraries || 'libraries/', icon: Code2 },
     { id: 'webs', label: t.tabWebs || 'webs/', icon: Globe },
   ]
+
+  const items = activeTab === 'libraries' ? portfolio.libraries : portfolio.webs
 
   return (
     <div className="min-h-screen bg-[#0c0c0c] text-[#d0d0d0]">
@@ -60,7 +160,7 @@ export const PortfolioPage = () => {
               })}
             </div>
 
-            <div className="p-6 md:p-8 min-h-[300px]">
+            <div className="p-5 md:p-6 min-h-[300px]">
               <AnimatePresence mode="wait">
                 {activeTab === 'libraries' && (
                   <motion.div
@@ -69,15 +169,20 @@ export const PortfolioPage = () => {
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
-                    className="text-center py-12"
                   >
-                    <Code2 size={40} className="mx-auto text-[#33ff33] mb-4" />
-                    <h3 className="text-lg font-bold text-[#d0d0d0] mb-2">
-                      {t.librariesPlaceholder || 'Libraries & Packages'}
-                    </h3>
-                    <p className="text-[#999999] font-mono text-sm max-w-md mx-auto">
-                      {t.librariesPlaceholderDesc || 'Reusable libraries, CLI tools and Python packages. Coming soon.'}
-                    </p>
+                    {items.length > 0 ? (
+                      <div className="grid gap-4">
+                        {items.map((item) => (
+                          <LibraryCard key={item.title} item={item} />
+                        ))}
+                      </div>
+                    ) : (
+                      <EmptyState
+                        icon={Code2}
+                        title={t.librariesPlaceholder || 'Libraries & Packages'}
+                        desc={t.librariesPlaceholderDesc || 'Reusable libraries, CLI tools and Python packages. Coming soon.'}
+                      />
+                    )}
                   </motion.div>
                 )}
 
@@ -88,15 +193,20 @@ export const PortfolioPage = () => {
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
-                    className="text-center py-12"
                   >
-                    <Globe size={40} className="mx-auto text-[#00cccc] mb-4" />
-                    <h3 className="text-lg font-bold text-[#d0d0d0] mb-2">
-                      {t.websPlaceholder || 'Websites & Web Apps'}
-                    </h3>
-                    <p className="text-[#999999] font-mono text-sm max-w-md mx-auto">
-                      {t.websPlaceholderDesc || 'Full websites, landing pages and web applications. Coming soon.'}
-                    </p>
+                    {items.length > 0 ? (
+                      <div className="grid gap-4">
+                        {items.map((item) => (
+                          <LibraryCard key={item.title} item={item} />
+                        ))}
+                      </div>
+                    ) : (
+                      <EmptyState
+                        icon={Globe}
+                        title={t.websPlaceholder || 'Websites & Web Apps'}
+                        desc={t.websPlaceholderDesc || 'Full websites, landing pages and web applications. Coming soon.'}
+                      />
+                    )}
                   </motion.div>
                 )}
               </AnimatePresence>
