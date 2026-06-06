@@ -13,6 +13,7 @@ import {
   ExternalLink,
   BookOpen,
   Package,
+  Plus,
 } from 'lucide-react'
 
 const ProjectCard = ({ item }) => {
@@ -190,6 +191,15 @@ export const PortfolioPage = () => {
                         {items.map((item) => (
                           <ProjectCard key={item.title} item={item} />
                         ))}
+                        <motion.div
+                          variants={fadeInUp}
+                          className="border border-dashed border-[#3a3a3a] bg-[#0c0c0c] p-5 md:p-6 flex flex-col items-center justify-center text-center gap-3"
+                        >
+                          <Plus size={24} className="text-[#999999]" />
+                          <p className="text-[#999999] font-mono text-sm">
+                            {t.portfolioMoreComing || 'more coming soon...'}
+                          </p>
+                        </motion.div>
                       </div>
                     ) : (
                       <EmptyState
@@ -214,6 +224,15 @@ export const PortfolioPage = () => {
                         {items.map((item) => (
                           <ProjectCard key={item.title} item={item} />
                         ))}
+                        <motion.div
+                          variants={fadeInUp}
+                          className="border border-dashed border-[#3a3a3a] bg-[#0c0c0c] p-5 md:p-6 flex flex-col items-center justify-center text-center gap-3"
+                        >
+                          <Plus size={24} className="text-[#999999]" />
+                          <p className="text-[#999999] font-mono text-sm">
+                            {t.portfolioMoreComing || 'more coming soon...'}
+                          </p>
+                        </motion.div>
                       </div>
                     ) : (
                       <EmptyState
