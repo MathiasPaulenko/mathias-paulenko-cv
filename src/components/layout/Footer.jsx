@@ -8,12 +8,12 @@ export const Footer = () => {
           <span className="text-[#33ff33]">$</span> echo "Mathias Paulenko {new Date().getFullYear()}"
         </p>
         <div className="flex gap-4">
-          <Link
-            to="/portfolio"
+          <a
+            href="#portfolio"
             className="hover:text-[#33ff33] transition-colors"
           >
             Portfolio
-          </Link>
+          </a>
           <Link
             to="/privacy"
             className="hover:text-[#33ff33] transition-colors"
