@@ -32,6 +32,18 @@
     sectionContact: 'contact --reach-me',
     sectionContactSub: 'ping',
 
+    sectionPortfolio: 'portfolio/',
+    sectionPortfolioSub: 'projects',
+
+    portfolioPageTitle: 'Portfolio',
+    portfolioPageDesc: 'A collection of my projects and work.',
+    portfolioPageBack: 'cd ~',
+    portfolioPagePlaceholder: 'Projects coming soon',
+    portfolioPagePlaceholderDesc: 'This section is being built. Check back later to see all my work.',
+    portfolioSectionTitle: 'My Portfolio',
+    portfolioSectionDesc: 'Explore all my projects, experiments and case studies in one place.',
+    portfolioSectionCta: 'cd portfolio/',
+
     experience: [
       {
         role: 'Project Leader / Test Solutions Architect',
@@ -240,6 +252,18 @@
     sectionContact: 'contact --reach-me',
     sectionContactSub: 'ping',
 
+    sectionPortfolio: 'portfolio/',
+    sectionPortfolioSub: 'proyectos',
+
+    portfolioPageTitle: 'Portfolio',
+    portfolioPageDesc: 'Una colección de mis proyectos y trabajos.',
+    portfolioPageBack: 'cd ~',
+    portfolioPagePlaceholder: 'Proyectos próximamente',
+    portfolioPagePlaceholderDesc: 'Esta sección está en construcción. Vuelve pronto para ver todo mi trabajo.',
+    portfolioSectionTitle: 'Mi Portfolio',
+    portfolioSectionDesc: 'Explora todos mis proyectos, experimentos y casos de estudio en un solo lugar.',
+    portfolioSectionCta: 'cd portfolio/',
+
     experience: [
       {
         role: 'Project Leader / Arquitecto de Soluciones de Testing',
@@ -447,6 +471,18 @@
     sectionLanguagesSub: 'i18n',
     sectionContact: 'contact --reach-me',
     sectionContactSub: 'ping',
+
+    sectionPortfolio: 'portfolio/',
+    sectionPortfolioSub: '项目',
+
+    portfolioPageTitle: '作品集',
+    portfolioPageDesc: '我的项目和工作集合。',
+    portfolioPageBack: 'cd ~',
+    portfolioPagePlaceholder: '项目即将上线',
+    portfolioPagePlaceholderDesc: '此部分正在建设中。稍后再来查看我的所有作品。',
+    portfolioSectionTitle: '我的作品集',
+    portfolioSectionDesc: '在一个地方探索我的所有项目、实验和案例研究。',
+    portfolioSectionCta: 'cd portfolio/',
 
     experience: [
       {

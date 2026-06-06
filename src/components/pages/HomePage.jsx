@@ -7,6 +7,7 @@ import { Footer } from '../layout/Footer'
 import { Languages } from '../sections/Languages'
 import { Navbar } from '../layout/Navbar'
 import { KeyboardShortcutsHint } from '../ui/KeyboardShortcutsHint'
+import { Portfolio } from '../sections/Portfolio'
 import { ScrollToTop } from '../ui/ScrollToTop'
 import { TechStack } from '../sections/TechStack'
 import { Terminal } from '../sections/Terminal'
@@ -27,6 +28,8 @@ export const HomePage = () => {
         <Education />
         <div className="glow-line" />
         <Certifications />
+        <div className="glow-line" />
+        <Portfolio />
         <div className="glow-line" />
         <Languages />
         <div className="glow-line" />

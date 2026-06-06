@@ -9,6 +9,12 @@ export const Footer = () => {
         </p>
         <div className="flex gap-4">
           <Link
+            to="/portfolio"
+            className="hover:text-[#33ff33] transition-colors"
+          >
+            Portfolio
+          </Link>
+          <Link
             to="/privacy"
             className="hover:text-[#33ff33] transition-colors"
           >

@@ -13,6 +13,7 @@ export const useKeyboardShortcuts = () => {
         e: '#experience',
         d: '#education',
         c: '#certifications',
+        p: '#portfolio',
         l: '#languages',
         n: '#contact',
         t: '#contact',
