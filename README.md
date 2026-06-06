@@ -38,7 +38,7 @@
 | 📬 **Contact** | Terminal-styled contact info with email, phone, location and social links |
 | ♿ **Accessible** | ARIA labels on icon buttons, semantic roles, aria-hidden on decorative elements |
 | 🔍 **SEO** | Meta tags, Open Graph, Twitter cards, canonical URL, hreflang, PWA manifest |
-| 🚀 **CI/CD** | Auto-deploy on push via GitHub Actions + Lighthouse CI |
+| 🚀 **CI/CD** | Auto-deploy on push via GitHub Actions |
 | 🌐 **Custom Domain** | mathiaspaulenko.com with CNAME |
 
 ---
