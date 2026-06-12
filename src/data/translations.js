@@ -54,6 +54,45 @@
     websPlaceholder: 'Websites & Web Apps',
     websPlaceholderDesc: 'Full websites, landing pages and web applications. Coming soon.',
 
+    portfolio: {
+      pixopt: {
+        tagline: 'Fast Python image optimizer for modern web workflows.',
+        description: 'CLI and Python API to resize, compress, convert formats, generate responsive assets, extract lazy-loading placeholders, and auto-detect optimal formats. Supports JPEG, PNG, WEBP, AVIF, GIF, HEIC, SVG and animated GIF → WEBP conversion.',
+      },
+      'python-selenium-examples': {
+        tagline: 'Comprehensive Selenium WebDriver 4 examples in Python.',
+        description: 'Self-contained runnable examples covering browsers, drivers, elements, waits, interactions, actions, BiDi/CDP, and more. Each module includes a private _build_driver() helper and follows a consistent pattern for learning and reference.',
+      },
+      'ai-toolkit': {
+        tagline: 'Curated collection of AI prompts, skills, agents, rules, workflows and tools.',
+        description: 'Organized resource library for LLM-powered development with Cursor, Devin, Windsurf and other AI IDEs. Includes 64 prompts, 11 skills, 7 agents, 14 rules, 15 workflows and various utilities.',
+      },
+      'dev-command-center': {
+        tagline: 'Desktop app for managing and running development commands.',
+        description: 'Card-based command manager with parallel process execution, real-time logs, persistent history in SQLite, tagging system, and import/export. Built with PySide6 and SQLAlchemy.',
+      },
+      'cerveceria-burgos-web': {
+        tagline: 'Official website for Cervecería Burgos, a traditional Spanish pub.',
+        description: 'Astro 6 SSG website with React islands. Features digital menu with tabs, masonry gallery with lightbox, contact & location with Google Maps, animated beer bubbles hero, PWA installability and SEO-ready markup.',
+      },
+      'cerveceria-burgos-recipes-app': {
+        tagline: 'PWA recipe app for cocktails and food with 170+ recipes.',
+        description: 'Installable PWA with offline support and TWA APK distribution. 70+ cocktails and 100+ food recipes with search, filters, interactive ingredient checkboxes, and smart navigation. Auto-generated thumbnails and semantic versioning with CI/CD.',
+      },
+      'GrammarNavigator.com': {
+        tagline: 'Multilingual grammar reference with practical explanations and examples.',
+        description: 'A web-based reference for language learners featuring grammar explanations, practical examples and language comparisons across multiple languages.',
+      },
+      'qa-practices-web': {
+        tagline: 'Practical QA resources including test cases, checklists and templates.',
+        description: 'Static-first website providing reusable resources for QA engineers: comprehensive test cases, quick-reference checklists, ready-to-use templates and in-depth testing guides. Built with Angular SSG and optimized for SEO.',
+      },
+      'stack-practices-web': {
+        tagline: 'Developer knowledge base with code recipes, design patterns and technical guides.',
+        description: 'SEO-first static knowledge base for software engineers. Features bilingual (EN/ES) content collections for recipes, patterns, docs and guides. Built with Astro 5, Tailwind CSS v4 and Pagefind static search.',
+      },
+    },
+
     experience: [
       {
         role: 'Project Leader / Test Solutions Architect',
@@ -284,6 +323,45 @@
     websPlaceholder: 'Webs y Aplicaciones Web',
     websPlaceholderDesc: 'Sitios web completos, landing pages y aplicaciones web. Próximamente.',
 
+    portfolio: {
+      pixopt: {
+        tagline: 'Optimizador rápido de imágenes Python para flujos de trabajo web modernos.',
+        description: 'CLI y API Python para redimensionar, comprimir, convertir formatos, generar assets responsivos, extraer placeholders de carga diferida y detectar formatos óptimos automáticamente. Soporta JPEG, PNG, WEBP, AVIF, GIF, HEIC, SVG y conversión GIF animado → WEBP.',
+      },
+      'python-selenium-examples': {
+        tagline: 'Ejemplos completos de Selenium WebDriver 4 en Python.',
+        description: 'Ejemplos ejecutables autónomos que cubren navegadores, drivers, elementos, esperas, interacciones, acciones, BiDi/CDP y más. Cada módulo incluye un helper privado _build_driver() y sigue un patrón consistente para aprendizaje y referencia.',
+      },
+      'ai-toolkit': {
+        tagline: 'Colección curada de prompts, skills, agentes, reglas, workflows y herramientas de IA.',
+        description: 'Biblioteca de recursos organizada para desarrollo potenciado por LLM con Cursor, Devin, Windsurf y otros IDEs de IA. Incluye 64 prompts, 11 skills, 7 agentes, 14 reglas, 15 workflows y diversas utilidades.',
+      },
+      'dev-command-center': {
+        tagline: 'Aplicación de escritorio para gestionar y ejecutar comandos de desarrollo.',
+        description: 'Gestor de comandos basado en tarjetas con ejecución paralela de procesos, logs en tiempo real, historial persistente en SQLite, sistema de etiquetado e import/export. Construido con PySide6 y SQLAlchemy.',
+      },
+      'cerveceria-burgos-web': {
+        tagline: 'Sitio web oficial de Cervecería Burgos, un pub tradicional español.',
+        description: 'Sitio Astro 6 SSG con islas React. Incluye carta digital con tabs, galería masonry con lightbox, contacto y ubicación con Google Maps, hero con burbujas de cerveza animadas, instalación PWA y markup SEO-ready.',
+      },
+      'cerveceria-burgos-recipes-app': {
+        tagline: 'App PWA de recetas de cócteles y comida con más de 170 recetas.',
+        description: 'PWA instalable con soporte offline y distribución TWA APK. Más de 70 cócteles y 100 recetas de comida con búsqueda, filtros, checkboxes interactivos de ingredientes y navegación inteligente. Thumbnails auto-generados y versionado semántico con CI/CD.',
+      },
+      'GrammarNavigator.com': {
+        tagline: 'Referencia gramatical multilingüe con explicaciones prácticas y ejemplos.',
+        description: 'Referencia web para estudiantes de idiomas con explicaciones gramaticales, ejemplos prácticos y comparaciones de idiomas en múltiples lenguas.',
+      },
+      'qa-practices-web': {
+        tagline: 'Recursos prácticos de QA incluyendo casos de prueba, checklists y plantillas.',
+        description: 'Sitio estático con recursos reutilizables para ingenieros de QA: casos de prueba completos, checklists de referencia rápida, plantillas listas para usar y guías de testing en profundidad. Construido con Angular SSG y optimizado para SEO.',
+      },
+      'stack-practices-web': {
+        tagline: 'Base de conocimiento para desarrolladores con recetas de código, patrones de diseño y guías técnicas.',
+        description: 'Base de conocimiento estática y SEO-first para ingenieros de software. Incluye colecciones de contenido bilingüe (EN/ES) para recetas, patrones, docs y guías. Construido con Astro 5, Tailwind CSS v4 y búsqueda estática Pagefind.',
+      },
+    },
+
     experience: [
       {
         role: 'Project Leader / Arquitecto de Soluciones de Testing',
@@ -513,6 +591,45 @@
     toolsPlaceholderDesc: '桌面应用、CLI工具和开发实用程序。即将上线。',
     websPlaceholder: '网站与Web应用',
     websPlaceholderDesc: '完整的网站、落地页和Web应用。即将上线。',
+
+    portfolio: {
+      pixopt: {
+        tagline: '适用于现代Web工作流的快速Python图像优化器。',
+        description: '用于调整大小、压缩、转换格式、生成响应式资源、提取懒加载占位符并自动检测最佳格式的CLI和Python API。支持JPEG、PNG、WEBP、AVIF、GIF、HEIC、SVG以及动画GIF转WEBP。',
+      },
+      'python-selenium-examples': {
+        tagline: 'Python中全面的Selenium WebDriver 4示例。',
+        description: '涵盖浏览器、驱动程序、元素、等待、交互、操作、BiDi/CDP等的独立可运行示例。每个模块包含一个私有的_build_driver()辅助函数，并遵循一致的学习和参考模式。',
+      },
+      'ai-toolkit': {
+        tagline: '精选的AI提示词、技能、代理、规则、工作流和工具集合。',
+        description: '为Cursor、Devin、Windsurf和其他AI IDE提供LLM驱动开发的组织资源库。包含64个提示词、11个技能、7个代理、14条规则、15个工作流和各种实用工具。',
+      },
+      'dev-command-center': {
+        tagline: '用于管理和运行开发命令的桌面应用程序。',
+        description: '基于卡片的命令管理器，支持并行进程执行、实时日志、SQLite持久化历史记录、标签系统和导入/导出功能。使用PySide6和SQLAlchemy构建。',
+      },
+      'cerveceria-burgos-web': {
+        tagline: 'Cervecería Burgos官方网站，一家传统西班牙酒吧。',
+        description: '采用React岛屿技术的Astro 6 SSG网站。功能包括带标签页的数字菜单、masonry画廊与灯箱、Google Maps联系与位置、动画啤酒气泡主视觉、PWA可安装性和SEO就绪标记。',
+      },
+      'cerveceria-burgos-recipes-app': {
+        tagline: '包含170多个食谱的PWA鸡尾酒和美食应用。',
+        description: '可安装的PWA，支持离线使用和TWA APK分发。70多种鸡尾酒和100多种美食食谱，支持搜索、筛选、交互式配料复选框和智能导航。自动生成缩略图和带CI/CD的语义化版本控制。',
+      },
+      'GrammarNavigator.com': {
+        tagline: '多语言语法参考，提供实用解释和示例。',
+        description: '面向语言学习者的基于Web的参考资料，提供语法解释、实用示例和跨多种语言的语言比较。',
+      },
+      'qa-practices-web': {
+        tagline: '实用的QA资源，包括测试用例、检查清单和模板。',
+        description: '为QA工程师提供可重用资源的静态优先网站：全面的测试用例、快速参考检查清单、即用型模板和深入的测试指南。使用Angular SSG构建并针对SEO进行了优化。',
+      },
+      'stack-practices-web': {
+        tagline: '开发者知识库，提供代码示例、设计模式和技术指南。',
+        description: '面向软件工程师的SEO优先静态知识库。功能包括双语（EN/ES）内容集合，用于示例、模式、文档和指南。使用Astro 5、Tailwind CSS v4和Pagefind静态搜索构建。',
+      },
+    },
 
     experience: [
       {

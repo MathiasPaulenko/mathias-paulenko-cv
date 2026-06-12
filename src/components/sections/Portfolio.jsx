@@ -132,7 +132,15 @@ export const Portfolio = () => {
     { id: 'webs', label: t.tabWebs || 'webs/', icon: Globe },
   ]
 
-  const items = portfolio[activeTab] || []
+  const rawItems = portfolio[activeTab] || []
+  const items = rawItems.map((item) => {
+    const text = t.portfolio && t.portfolio[item.title]
+    return {
+      ...item,
+      tagline: text?.tagline || item.tagline,
+      description: text?.description || item.description,
+    }
+  })
   const totalPages = Math.ceil(items.length / PAGE_SIZE)
   const paginated = items.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
 
