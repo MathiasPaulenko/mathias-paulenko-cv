@@ -79,15 +79,15 @@
         tagline: 'PWA recipe app for cocktails and food with 170+ recipes.',
         description: 'Installable PWA with offline support and TWA APK distribution. 70+ cocktails and 100+ food recipes with search, filters, interactive ingredient checkboxes, and smart navigation. Auto-generated thumbnails and semantic versioning with CI/CD.',
       },
-      'GrammarNavigator.com': {
+      'grammarnavigator.com': {
         tagline: 'Multilingual grammar reference with practical explanations and examples.',
         description: 'A web-based reference for language learners featuring grammar explanations, practical examples and language comparisons across multiple languages.',
       },
-      'qa-practices-web': {
+      'qapractices.com': {
         tagline: 'Practical QA resources including test cases, checklists and templates.',
         description: 'Static-first website providing reusable resources for QA engineers: comprehensive test cases, quick-reference checklists, ready-to-use templates and in-depth testing guides. Built with Angular SSG and optimized for SEO.',
       },
-      'stack-practices-web': {
+      'stackpractices.com': {
         tagline: 'Developer knowledge base with code recipes, design patterns and technical guides.',
         description: 'SEO-first static knowledge base for software engineers. Features bilingual (EN/ES) content collections for recipes, patterns, docs and guides. Built with Astro 5, Tailwind CSS v4 and Pagefind static search.',
       },
@@ -348,15 +348,15 @@
         tagline: 'App PWA de recetas de cócteles y comida con más de 170 recetas.',
         description: 'PWA instalable con soporte offline y distribución TWA APK. Más de 70 cócteles y 100 recetas de comida con búsqueda, filtros, checkboxes interactivos de ingredientes y navegación inteligente. Thumbnails auto-generados y versionado semántico con CI/CD.',
       },
-      'GrammarNavigator.com': {
+      'grammarnavigator.com': {
         tagline: 'Referencia gramatical multilingüe con explicaciones prácticas y ejemplos.',
         description: 'Referencia web para estudiantes de idiomas con explicaciones gramaticales, ejemplos prácticos y comparaciones de idiomas en múltiples lenguas.',
       },
-      'qa-practices-web': {
+      'qapractices.com': {
         tagline: 'Recursos prácticos de QA incluyendo casos de prueba, checklists y plantillas.',
         description: 'Sitio estático con recursos reutilizables para ingenieros de QA: casos de prueba completos, checklists de referencia rápida, plantillas listas para usar y guías de testing en profundidad. Construido con Angular SSG y optimizado para SEO.',
       },
-      'stack-practices-web': {
+      'stackpractices.com': {
         tagline: 'Base de conocimiento para desarrolladores con recetas de código, patrones de diseño y guías técnicas.',
         description: 'Base de conocimiento estática y SEO-first para ingenieros de software. Incluye colecciones de contenido bilingüe (EN/ES) para recetas, patrones, docs y guías. Construido con Astro 5, Tailwind CSS v4 y búsqueda estática Pagefind.',
       },
@@ -617,15 +617,15 @@
         tagline: '包含170多个食谱的PWA鸡尾酒和美食应用。',
         description: '可安装的PWA，支持离线使用和TWA APK分发。70多种鸡尾酒和100多种美食食谱，支持搜索、筛选、交互式配料复选框和智能导航。自动生成缩略图和带CI/CD的语义化版本控制。',
       },
-      'GrammarNavigator.com': {
+      'grammarnavigator.com': {
         tagline: '多语言语法参考，提供实用解释和示例。',
         description: '面向语言学习者的基于Web的参考资料，提供语法解释、实用示例和跨多种语言的语言比较。',
       },
-      'qa-practices-web': {
+      'qapractices.com': {
         tagline: '实用的QA资源，包括测试用例、检查清单和模板。',
         description: '为QA工程师提供可重用资源的静态优先网站：全面的测试用例、快速参考检查清单、即用型模板和深入的测试指南。使用Angular SSG构建并针对SEO进行了优化。',
       },
-      'stack-practices-web': {
+      'stackpractices.com': {
         tagline: '开发者知识库，提供代码示例、设计模式和技术指南。',
         description: '面向软件工程师的SEO优先静态知识库。功能包括双语（EN/ES）内容集合，用于示例、模式、文档和指南。使用Astro 5、Tailwind CSS v4和Pagefind静态搜索构建。',
       },
