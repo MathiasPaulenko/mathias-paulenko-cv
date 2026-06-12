@@ -442,7 +442,7 @@ export const portfolio = {
       license: 'MIT',
     },
     {
-      title: 'language-reference-web',
+      title: 'GrammarNavigator.com',
       tagline: 'Multilingual grammar reference with practical explanations and examples.',
       description: 'A web-based reference for language learners featuring grammar explanations, practical examples and language comparisons across multiple languages.',
       tech: ['React', 'Vite', 'TailwindCSS', 'Framer Motion', 'i18n', 'GitHub Pages'],
