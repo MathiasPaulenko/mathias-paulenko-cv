@@ -420,6 +420,17 @@ export const portfolio = {
       license: 'MIT',
     },
   ],
+  tools: [
+    {
+      title: 'dev-command-center',
+      tagline: 'Desktop app for managing and running development commands.',
+      description: 'Card-based command manager with parallel process execution, real-time logs, persistent history in SQLite, tagging system, and import/export. Built with PySide6 and SQLAlchemy.',
+      tech: ['Python', 'PySide6', 'SQLAlchemy', 'SQLite', 'QProcess'],
+      github: 'https://github.com/MathiasPaulenko/dev-command-center',
+      version: '1.0.0',
+      license: 'MIT',
+    },
+  ],
   webs: [
     {
       title: 'cerveceria-burgos-web',

@@ -13,6 +13,7 @@ import {
   Package,
   ChevronLeft,
   ChevronRight,
+  Wrench,
 } from 'lucide-react'
 
 const PAGE_SIZE = 3
@@ -127,10 +128,11 @@ export const Portfolio = () => {
 
   const tabs = [
     { id: 'libraries', label: t.tabLibraries || 'libraries/', icon: Code2 },
+    { id: 'tools', label: t.tabTools || 'tools/', icon: Wrench },
     { id: 'webs', label: t.tabWebs || 'webs/', icon: Globe },
   ]
 
-  const items = activeTab === 'libraries' ? portfolio.libraries : portfolio.webs
+  const items = portfolio[activeTab] || []
   const totalPages = Math.ceil(items.length / PAGE_SIZE)
   const paginated = items.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
 
@@ -184,16 +186,26 @@ export const Portfolio = () => {
                 </div>
               ) : (
                 <EmptyState
-                  icon={activeTab === 'libraries' ? Code2 : Globe}
+                  icon={
+                    activeTab === 'libraries'
+                      ? Code2
+                      : activeTab === 'tools'
+                        ? Wrench
+                        : Globe
+                  }
                   title={
                     activeTab === 'libraries'
                       ? t.librariesPlaceholder || 'Libraries & Packages'
-                      : t.websPlaceholder || 'Websites & Web Apps'
+                      : activeTab === 'tools'
+                        ? t.toolsPlaceholder || 'Tools & Utilities'
+                        : t.websPlaceholder || 'Websites & Web Apps'
                   }
                   desc={
                     activeTab === 'libraries'
                       ? t.librariesPlaceholderDesc || 'Reusable libraries, CLI tools and Python packages. Coming soon.'
-                      : t.websPlaceholderDesc || 'Full websites, landing pages and web applications. Coming soon.'
+                      : activeTab === 'tools'
+                        ? t.toolsPlaceholderDesc || 'Desktop apps, CLI tools and development utilities. Coming soon.'
+                        : t.websPlaceholderDesc || 'Full websites, landing pages and web applications. Coming soon.'
                   }
                 />
               )}
