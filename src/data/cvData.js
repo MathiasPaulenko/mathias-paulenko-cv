@@ -450,5 +450,23 @@ export const portfolio = {
       version: '1.0.0',
       license: 'MIT',
     },
+    {
+      title: 'qa-practices-web',
+      tagline: 'Practical QA resources including test cases, checklists and templates.',
+      description: 'Static-first website providing reusable resources for QA engineers: comprehensive test cases, quick-reference checklists, ready-to-use templates and in-depth testing guides. Built with Angular SSG and optimized for SEO.',
+      tech: ['Angular 22', 'TypeScript', 'TailwindCSS 3', 'SSG', 'GitHub Pages'],
+      liveUrl: 'https://mathiaspaulenko.github.io/qa-practices-web/',
+      version: '1.0.0',
+      license: 'MIT',
+    },
+    {
+      title: 'stack-practices-web',
+      tagline: 'Developer knowledge base with code recipes, design patterns and technical guides.',
+      description: 'SEO-first static knowledge base for software engineers. Features bilingual (EN/ES) content collections for recipes, patterns, docs and guides. Built with Astro 5, Tailwind CSS v4 and Pagefind static search.',
+      tech: ['Astro 5', 'TailwindCSS 4', 'Pagefind', 'Content Collections', 'GitHub Pages'],
+      liveUrl: 'https://mathiaspaulenko.github.io/stack-practices-web/',
+      version: '1.0.0',
+      license: 'MIT',
+    },
   ],
 }
