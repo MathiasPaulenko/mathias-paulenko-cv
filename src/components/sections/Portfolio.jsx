@@ -16,7 +16,7 @@ import {
   Wrench,
 } from 'lucide-react'
 
-const PAGE_SIZE = 3
+const PAGE_SIZE = 8
 
 const ProjectCard = ({ item }) => {
   return (
@@ -179,7 +179,7 @@ export const Portfolio = () => {
               exit="hidden"
             >
               {items.length > 0 ? (
-                <div className="grid gap-4">
+                <div className="grid gap-4 md:grid-cols-2">
                   {paginated.map((item) => (
                     <ProjectCard key={item.title} item={item} />
                   ))}
