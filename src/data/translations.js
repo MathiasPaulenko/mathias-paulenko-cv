@@ -62,9 +62,9 @@
         tagline: 'Fast Python image optimizer for modern web workflows.',
         description: 'CLI and Python API to resize, compress, convert formats, generate responsive assets, extract lazy-loading placeholders, and auto-detect optimal formats. Supports JPEG, PNG, WEBP, AVIF, GIF, HEIC, SVG and animated GIF → WEBP conversion.',
       },
-      browsix: {
+      wavexis: {
         tagline: 'Browser automation CLI — wraps cdpwave and bidiwave. No Node.js, no Chromium download.',
-        description: '100+ CLI commands across CDP and BiDi backends with full feature parity. Uses your existing Chrome/Edge — no Chromium download required. Includes screenshots, PDF, scraping, device emulation, auth profiles, session recording, serve mode (HTTP API with WebSocket streaming), multi-action YAML pipelines, and shell completions.',
+        description: '100+ CLI commands across CDP and BiDi backends with full feature parity. Uses your existing Chrome/Edge — no Chromium download required. Includes screenshots, PDF, scraping, device emulation, auth profiles, session recording, serve mode (HTTP API with WebSocket streaming), multi-action YAML pipelines, REPL, CI assertions, performance metrics, and shell completions.',
       },
       cdpwave: {
         tagline: 'Chrome DevTools Protocol for Python — direct, typed, async.',
@@ -386,9 +386,9 @@
         tagline: 'Optimizador rápido de imágenes Python para flujos de trabajo web modernos.',
         description: 'CLI y API Python para redimensionar, comprimir, convertir formatos, generar assets responsivos, extraer placeholders de carga diferida y detectar formatos óptimos automáticamente. Soporta JPEG, PNG, WEBP, AVIF, GIF, HEIC, SVG y conversión GIF animado → WEBP.',
       },
-      browsix: {
+      wavexis: {
         tagline: 'CLI de automatización de navegadores — envuelve cdpwave y bidiwave. Sin Node.js, sin descargar Chromium.',
-        description: 'Más de 100 comandos CLI con paridad completa entre backends CDP y BiDi. Usa tu Chrome/Edge existente — sin descarga de Chromium. Incluye capturas, PDF, scraping, emulación de dispositivos, perfiles de autenticación, grabación de sesiones, modo serve (API HTTP con streaming WebSocket), pipelines multi-acción YAML y autocompletado de shell.',
+        description: 'Más de 100 comandos CLI con paridad completa entre backends CDP y BiDi. Usa tu Chrome/Edge existente — sin descarga de Chromium. Incluye capturas, PDF, scraping, emulación de dispositivos, perfiles de autenticación, grabación de sesiones, modo serve (API HTTP con streaming WebSocket), pipelines multi-acción YAML, REPL, aserciones CI, métricas de rendimiento y autocompletado de shell.',
       },
       cdpwave: {
         tagline: 'Chrome DevTools Protocol para Python — directo, tipado, asíncrono.',
@@ -710,9 +710,9 @@
         tagline: '适用于现代Web工作流的快速Python图像优化器。',
         description: '用于调整大小、压缩、转换格式、生成响应式资源、提取懒加载占位符并自动检测最佳格式的CLI和Python API。支持JPEG、PNG、WEBP、AVIF、GIF、HEIC、SVG以及动画GIF转WEBP。',
       },
-      browsix: {
+      wavexis: {
         tagline: '浏览器自动化CLI — 封装cdpwave和bidiwave。无需Node.js，无需下载Chromium。',
-        description: '100多个CLI命令，CDP和BiDi后端之间完全功能对等。使用现有的Chrome/Edge — 无需下载Chromium。包括截图、PDF、抓取、设备模拟、认证配置、会话录制、serve模式（带WebSocket流的HTTP API）、多动作YAML管道和shell自动补全。',
+        description: '100多个CLI命令，CDP和BiDi后端之间完全功能对等。使用现有的Chrome/Edge — 无需下载Chromium。包括截图、PDF、抓取、设备模拟、认证配置、会话录制、serve模式（带WebSocket流的HTTP API）、多动作YAML管道、REPL、CI断言、性能指标和shell自动补全。',
       },
       cdpwave: {
         tagline: 'Python的Chrome DevTools Protocol — 直接、类型化、异步。',
