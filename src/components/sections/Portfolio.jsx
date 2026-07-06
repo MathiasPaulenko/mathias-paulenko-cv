@@ -14,6 +14,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Wrench,
+  FolderOpen,
 } from 'lucide-react'
 
 const PAGE_SIZE = 8
@@ -128,6 +129,7 @@ export const Portfolio = () => {
 
   const tabs = [
     { id: 'libraries', label: t.tabLibraries || 'libraries/', icon: Code2 },
+    { id: 'resources', label: t.tabResources || 'resources/', icon: FolderOpen },
     { id: 'tools', label: t.tabTools || 'tools/', icon: Wrench },
     { id: 'webs', label: t.tabWebs || 'webs/', icon: Globe },
   ]
@@ -197,23 +199,29 @@ export const Portfolio = () => {
                   icon={
                     activeTab === 'libraries'
                       ? Code2
-                      : activeTab === 'tools'
-                        ? Wrench
-                        : Globe
+                      : activeTab === 'resources'
+                        ? FolderOpen
+                        : activeTab === 'tools'
+                          ? Wrench
+                          : Globe
                   }
                   title={
                     activeTab === 'libraries'
                       ? t.librariesPlaceholder || 'Libraries & Packages'
-                      : activeTab === 'tools'
-                        ? t.toolsPlaceholder || 'Tools & Utilities'
-                        : t.websPlaceholder || 'Websites & Web Apps'
+                      : activeTab === 'resources'
+                        ? t.resourcesPlaceholder || 'Resources & References'
+                        : activeTab === 'tools'
+                          ? t.toolsPlaceholder || 'Tools & Utilities'
+                          : t.websPlaceholder || 'Websites & Web Apps'
                   }
                   desc={
                     activeTab === 'libraries'
                       ? t.librariesPlaceholderDesc || 'Reusable libraries, CLI tools and Python packages. Coming soon.'
-                      : activeTab === 'tools'
-                        ? t.toolsPlaceholderDesc || 'Desktop apps, CLI tools and development utilities. Coming soon.'
-                        : t.websPlaceholderDesc || 'Full websites, landing pages and web applications. Coming soon.'
+                      : activeTab === 'resources'
+                        ? t.resourcesPlaceholderDesc || 'Code examples, learning resources and reference materials. Coming soon.'
+                        : activeTab === 'tools'
+                          ? t.toolsPlaceholderDesc || 'Desktop apps, CLI tools and development utilities. Coming soon.'
+                          : t.websPlaceholderDesc || 'Full websites, landing pages and web applications. Coming soon.'
                   }
                 />
               )}

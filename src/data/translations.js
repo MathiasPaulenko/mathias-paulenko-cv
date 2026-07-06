@@ -45,10 +45,13 @@
     portfolioSectionCta: 'cd portfolio/',
     portfolioMoreComing: 'more coming soon...',
     tabLibraries: 'libraries/',
+    tabResources: 'resources/',
     tabTools: 'tools/',
     tabWebs: 'webs/',
     librariesPlaceholder: 'Libraries & Packages',
     librariesPlaceholderDesc: 'Reusable libraries, CLI tools and Python packages. Coming soon.',
+    resourcesPlaceholder: 'Resources & References',
+    resourcesPlaceholderDesc: 'Code examples, learning resources and reference materials. Coming soon.',
     toolsPlaceholder: 'Tools & Utilities',
     toolsPlaceholderDesc: 'Desktop apps, CLI tools and development utilities. Coming soon.',
     websPlaceholder: 'Websites & Web Apps',
@@ -59,13 +62,61 @@
         tagline: 'Fast Python image optimizer for modern web workflows.',
         description: 'CLI and Python API to resize, compress, convert formats, generate responsive assets, extract lazy-loading placeholders, and auto-detect optimal formats. Supports JPEG, PNG, WEBP, AVIF, GIF, HEIC, SVG and animated GIF → WEBP conversion.',
       },
+      browsix: {
+        tagline: 'Browser automation CLI — wraps cdpwave and bidiwave. No Node.js, no Chromium download.',
+        description: '100+ CLI commands across CDP and BiDi backends with full feature parity. Uses your existing Chrome/Edge — no Chromium download required. Includes screenshots, PDF, scraping, device emulation, auth profiles, session recording, serve mode (HTTP API with WebSocket streaming), multi-action YAML pipelines, and shell completions.',
+      },
+      cdpwave: {
+        tagline: 'Chrome DevTools Protocol for Python — direct, typed, async.',
+        description: 'Talks to Chrome over a raw WebSocket. No Node.js, no ChromeDriver, no browser downloads. Full CDP coverage with 386 typed methods across 48 domains. Async-first with full type hints, browser detection, multi-tab sessions, and event helpers.',
+      },
+      bidiwave: {
+        tagline: 'WebDriver BiDi for Python — talk to any browser via W3C standard.',
+        description: 'Cross-browser WebDriver BiDi client supporting Chrome, Firefox, and Edge. Async-first with Pydantic v2 models. Includes browsing, script evaluation, input simulation, network interception, storage, emulation, permissions, preload scripts, CDP bridge, and 21 event types.',
+      },
+      'behave-format': {
+        tagline: 'The opinionated formatter for Behave .feature files.',
+        description: 'Deterministic, opinionated formatter for Gherkin .feature files — like Black for Python or gofmt for Go. Idempotent, CI-friendly with --check mode, safe (never changes semantics). Consumes behave-model and produces clean, consistent output.',
+      },
+      'behave-model': {
+        tagline: 'The canonical object model for Behave projects.',
+        description: 'Provides a clean, stable, extensible Python API representing every element of a Behave project — features, rules, scenarios, steps, tags, tables, docstrings. Full Gherkin v6 support, visitor pattern, query API, serializers, transformations, validation, and statistics.',
+      },
+      'behave-modern-console-report': {
+        tagline: 'Modern console report formatter for Behave with rich terminal output.',
+        description: 'Six formatters (modern, modern-live, progress, log, ci, minimal) with real-time output, progress bars, colored status icons, failure diagnostics, and per-formatter configuration. Inspired by Playwright CLI, pytest, and Cargo.',
+      },
+      'behave-modern-md-report': {
+        tagline: 'Modern, readable, CI/CD-friendly Markdown report formatter for Behave.',
+        description: 'Generates a single report.md with executive summary, feature tables, tag statistics, failed scenarios, slowest scenarios, collapsible scenario details, environment info, and a step catalog. Works with GitHub Actions Summaries, GitLab, Azure DevOps, and wikis.',
+      },
+      'behave-modern-html-report': {
+        tagline: 'Modern, beautiful, single-file HTML report formatter for Behave.',
+        description: 'Self-contained HTML report with dark/light/auto themes, interactive charts, instant search, tag analytics, Gherkin Rules support, attachments with lightbox, copy-reproduce-command, step catalog, and accessible keyboard navigation. Zero external requests — works offline forever.',
+      },
+      'behave-modern-json-report': {
+        tagline: 'Modern JSON report formatter for Behave with structured execution model.',
+        description: 'Schema-versioned JSON output with stable unique identifiers, structured errors, attachments, Gherkin backgrounds and rules, expanded statuses, rich statistics, environment detection, arbitrary metadata, and Cucumber JSON compatibility. Production-ready with 123 tests.',
+      },
       'python-selenium-examples': {
         tagline: 'Comprehensive Selenium WebDriver 4 examples in Python.',
         description: 'Self-contained runnable examples covering browsers, drivers, elements, waits, interactions, actions, BiDi/CDP, and more. Each module includes a private _build_driver() helper and follows a consistent pattern for learning and reference.',
       },
+      'python-behave-examples': {
+        tagline: 'Complete, self-contained Behave automation suite demonstrating every major Gherkin/Behave feature.',
+        description: 'Covers Background, Scenario Outline with multiple Examples, Gherkin v6 Rule blocks, data tables, DocStrings, async steps, REST API testing with Flask, external CSV Examples, custom type converters, environment hooks, and multiple report formats (HTML, JSON, Markdown, JUnit, Cucumber). Uses behave 1.3.x.',
+      },
+      'cookiecutter-example': {
+        tagline: 'Reference repository for learning, using, and creating Cookiecutter templates.',
+        description: 'Includes a full Behave BDD project template with conditional dependencies, pre/post generation hooks, and git init. Also contains 4 minimalist examples (minimal, hooks, choices/conditionals, dynamic Jinja2), complete documentation guides, cheatsheet, and curated resources.',
+      },
       'ai-toolkit': {
         tagline: 'Curated collection of AI prompts, skills, agents, rules, workflows and tools.',
         description: 'Organized resource library for LLM-powered development with Cursor, Devin, Windsurf and other AI IDEs. Includes 64 prompts, 11 skills, 7 agents, 14 rules, 15 workflows and various utilities.',
+      },
+      'behave-lint': {
+        tagline: 'A fast, opinionated, extensible linter for Gherkin .feature files and Behave test suites.',
+        description: '50 built-in rules across 9 categories with auto-fix for 14 rules. Includes watch mode, LSP server, 5 output formats (console, JSON, SARIF, Markdown, GitHub annotations), plugin system, and zero-config defaults. CI/CD ready with SARIF integration for GitHub Code Scanning.',
       },
       'dev-command-center': {
         tagline: 'Desktop app for managing and running development commands.',
@@ -90,6 +141,10 @@
       'stackpractices.com': {
         tagline: 'Developer knowledge base with code recipes, design patterns and technical guides.',
         description: 'SEO-first static knowledge base for software engineers. Features bilingual (EN/ES) content collections for recipes, patterns, docs and guides. Built with Astro 5, Tailwind CSS v4 and Pagefind static search.',
+      },
+      'nextquest-web': {
+        tagline: 'Game library manager with transparent, data-driven recommendations — no generative AI.',
+        description: 'Nuxt 4 + NestJS monorepo with IGDB catalog integration, 5-state personal library, transparent recommendation engine with 6 factors and 4 presets, onboarding wizard, secure auth (httpOnly cookies + CSRF + Argon2id), multi-language (ES/EN), and dark mode. pnpm workspaces + Turborepo.',
       },
     },
 
@@ -314,10 +369,13 @@
     portfolioSectionCta: 'cd portfolio/',
     portfolioMoreComing: 'más próximamente...',
     tabLibraries: 'librerías/',
+    tabResources: 'recursos/',
     tabTools: 'herramientas/',
     tabWebs: 'webs/',
     librariesPlaceholder: 'Librerías y Paquetes',
     librariesPlaceholderDesc: 'Librerías reutilizables, herramientas CLI y paquetes Python. Próximamente.',
+    resourcesPlaceholder: 'Recursos y Referencias',
+    resourcesPlaceholderDesc: 'Ejemplos de código, recursos de aprendizaje y materiales de referencia. Próximamente.',
     toolsPlaceholder: 'Herramientas y Utilidades',
     toolsPlaceholderDesc: 'Aplicaciones de escritorio, herramientas CLI y utilidades de desarrollo. Próximamente.',
     websPlaceholder: 'Webs y Aplicaciones Web',
@@ -328,13 +386,61 @@
         tagline: 'Optimizador rápido de imágenes Python para flujos de trabajo web modernos.',
         description: 'CLI y API Python para redimensionar, comprimir, convertir formatos, generar assets responsivos, extraer placeholders de carga diferida y detectar formatos óptimos automáticamente. Soporta JPEG, PNG, WEBP, AVIF, GIF, HEIC, SVG y conversión GIF animado → WEBP.',
       },
+      browsix: {
+        tagline: 'CLI de automatización de navegadores — envuelve cdpwave y bidiwave. Sin Node.js, sin descargar Chromium.',
+        description: 'Más de 100 comandos CLI con paridad completa entre backends CDP y BiDi. Usa tu Chrome/Edge existente — sin descarga de Chromium. Incluye capturas, PDF, scraping, emulación de dispositivos, perfiles de autenticación, grabación de sesiones, modo serve (API HTTP con streaming WebSocket), pipelines multi-acción YAML y autocompletado de shell.',
+      },
+      cdpwave: {
+        tagline: 'Chrome DevTools Protocol para Python — directo, tipado, asíncrono.',
+        description: 'Se comunica con Chrome mediante WebSocket directo. Sin Node.js, sin ChromeDriver, sin descargas de navegador. Cobertura CDP completa con 386 métodos tipados en 48 dominios. Asíncrono desde el inicio con type hints completos, detección de navegador, sesiones multi-pestaña y helpers de eventos.',
+      },
+      bidiwave: {
+        tagline: 'WebDriver BiDi para Python — comunícate con cualquier navegador vía estándar W3C.',
+        description: 'Cliente WebDriver BiDi multi-navegador compatible con Chrome, Firefox y Edge. Asíncrono desde el inicio con modelos Pydantic v2. Incluye navegación, evaluación de scripts, simulación de input, interceptación de red, almacenamiento, emulación, permisos, preload scripts, puente CDP y 21 tipos de eventos.',
+      },
+      'behave-format': {
+        tagline: 'El formateador opinionated para archivos .feature de Behave.',
+        description: 'Formateador determinista y opinionated para archivos .feature Gherkin — como Black para Python o gofmt para Go. Idempotente, compatible con CI mediante --check, seguro (nunca cambia la semántica). Consume behave-model y produce salida limpia y consistente.',
+      },
+      'behave-model': {
+        tagline: 'El modelo de objetos canónico para proyectos Behave.',
+        description: 'Proporciona una API Python limpia, estable y extensible que representa cada elemento de un proyecto Behave — features, rules, scenarios, steps, tags, tablas, docstrings. Soporte completo de Gherkin v6, patrón visitor, API de consulta, serializadores, transformaciones, validación y estadísticas.',
+      },
+      'behave-modern-console-report': {
+        tagline: 'Formateador de reportes de consola moderno para Behave con salida de terminal enriquecida.',
+        description: 'Seis formateadores (modern, modern-live, progress, log, ci, minimal) con salida en tiempo real, barras de progreso, iconos de estado coloreados, diagnósticos de fallos y configuración por formateador. Inspirado en Playwright CLI, pytest y Cargo.',
+      },
+      'behave-modern-md-report': {
+        tagline: 'Formateador de reportes Markdown moderno, legible y compatible con CI/CD para Behave.',
+        description: 'Genera un único report.md con resumen ejecutivo, tablas de features, estadísticas de tags, escenarios fallidos, escenarios más lentos, detalles de escenarios colapsables, información de entorno y catálogo de steps. Compatible con GitHub Actions Summaries, GitLab, Azure DevOps y wikis.',
+      },
+      'behave-modern-html-report': {
+        tagline: 'Formateador de reportes HTML moderno, bonito y de archivo único para Behave.',
+        description: 'Reporte HTML autocontenido con temas dark/light/auto, gráficos interactivos, búsqueda instantánea, analítica de tags, soporte de Gherkin Rules, attachments con lightbox, comando de reproducción, catálogo de steps y navegación por teclado accesible. Cero peticiones externas — funciona offline para siempre.',
+      },
+      'behave-modern-json-report': {
+        tagline: 'Formateador de reportes JSON moderno para Behave con modelo de ejecución estructurado.',
+        description: 'Salida JSON con versión de esquema, identificadores únicos estables, errores estructurados, attachments, backgrounds y rules de Gherkin, estados expandidos, estadísticas ricas, detección de entorno, metadatos arbitrarios y compatibilidad con Cucumber JSON. Listo para producción con 123 tests.',
+      },
       'python-selenium-examples': {
         tagline: 'Ejemplos completos de Selenium WebDriver 4 en Python.',
         description: 'Ejemplos ejecutables autónomos que cubren navegadores, drivers, elementos, esperas, interacciones, acciones, BiDi/CDP y más. Cada módulo incluye un helper privado _build_driver() y sigue un patrón consistente para aprendizaje y referencia.',
       },
+      'python-behave-examples': {
+        tagline: 'Suite completa de automatización Behave que demuestra todas las funcionalidades principales de Gherkin/Behave.',
+        description: 'Cubre Background, Scenario Outline con múltiples Examples, bloques Rule de Gherkin v6, tablas de datos, DocStrings, steps asíncronos, testing de API REST con Flask, Examples con CSV externo, conversores de tipos personalizados, hooks de entorno y múltiples formatos de reporte (HTML, JSON, Markdown, JUnit, Cucumber). Usa behave 1.3.x.',
+      },
+      'cookiecutter-example': {
+        tagline: 'Repositorio de referencia para aprender, usar y crear plantillas de Cookiecutter.',
+        description: 'Incluye una plantilla completa de proyecto Behave BDD con dependencias condicionales, hooks pre/post generación e init de git. También contiene 4 ejemplos minimalistas (mínimo, hooks, choices/conditionals, Jinja2 dinámico), guías de documentación completas, cheatsheet y recursos curados.',
+      },
       'ai-toolkit': {
         tagline: 'Colección curada de prompts, skills, agentes, reglas, workflows y herramientas de IA.',
         description: 'Biblioteca de recursos organizada para desarrollo potenciado por LLM con Cursor, Devin, Windsurf y otros IDEs de IA. Incluye 64 prompts, 11 skills, 7 agentes, 14 reglas, 15 workflows y diversas utilidades.',
+      },
+      'behave-lint': {
+        tagline: 'Linter rápido, opinionated y extensible para archivos .feature Gherkin y suites de testing Behave.',
+        description: '50 reglas integradas en 9 categorías con auto-fix para 14 reglas. Incluye modo watch, servidor LSP, 5 formatos de salida (consola, JSON, SARIF, Markdown, anotaciones GitHub), sistema de plugins y configuración cero. Listo para CI/CD con integración SARIF para GitHub Code Scanning.',
       },
       'dev-command-center': {
         tagline: 'Aplicación de escritorio para gestionar y ejecutar comandos de desarrollo.',
@@ -359,6 +465,10 @@
       'stackpractices.com': {
         tagline: 'Base de conocimiento para desarrolladores con recetas de código, patrones de diseño y guías técnicas.',
         description: 'Base de conocimiento estática y SEO-first para ingenieros de software. Incluye colecciones de contenido bilingüe (EN/ES) para recetas, patrones, docs y guías. Construido con Astro 5, Tailwind CSS v4 y búsqueda estática Pagefind.',
+      },
+      'nextquest-web': {
+        tagline: 'Gestor de biblioteca de videojuegos con recomendaciones transparentes basadas en datos — sin IA generativa.',
+        description: 'Monorepo Nuxt 4 + NestJS con integración del catálogo IGDB, biblioteca personal de 5 estados, motor de recomendación transparente con 6 factores y 4 presets, asistente de onboarding, autenticación segura (cookies httpOnly + CSRF + Argon2id), multi-idioma (ES/EN) y modo oscuro. pnpm workspaces + Turborepo.',
       },
     },
 
@@ -583,10 +693,13 @@
     portfolioSectionCta: 'cd portfolio/',
     portfolioMoreComing: '更多精彩内容，敬请期待...',
     tabLibraries: '库/',
+    tabResources: '资源/',
     tabTools: '工具/',
     tabWebs: '网站/',
     librariesPlaceholder: '库与包',
     librariesPlaceholderDesc: '可复用的库、CLI工具和Python包。即将上线。',
+    resourcesPlaceholder: '资源与参考',
+    resourcesPlaceholderDesc: '代码示例、学习资源和参考资料。即将上线。',
     toolsPlaceholder: '工具与实用程序',
     toolsPlaceholderDesc: '桌面应用、CLI工具和开发实用程序。即将上线。',
     websPlaceholder: '网站与Web应用',
@@ -597,13 +710,61 @@
         tagline: '适用于现代Web工作流的快速Python图像优化器。',
         description: '用于调整大小、压缩、转换格式、生成响应式资源、提取懒加载占位符并自动检测最佳格式的CLI和Python API。支持JPEG、PNG、WEBP、AVIF、GIF、HEIC、SVG以及动画GIF转WEBP。',
       },
+      browsix: {
+        tagline: '浏览器自动化CLI — 封装cdpwave和bidiwave。无需Node.js，无需下载Chromium。',
+        description: '100多个CLI命令，CDP和BiDi后端之间完全功能对等。使用现有的Chrome/Edge — 无需下载Chromium。包括截图、PDF、抓取、设备模拟、认证配置、会话录制、serve模式（带WebSocket流的HTTP API）、多动作YAML管道和shell自动补全。',
+      },
+      cdpwave: {
+        tagline: 'Python的Chrome DevTools Protocol — 直接、类型化、异步。',
+        description: '通过原始WebSocket与Chrome通信。无需Node.js、无需ChromeDriver、无需下载浏览器。完整的CDP覆盖，48个域中386个类型化方法。异步优先，完整类型提示，浏览器检测，多标签页会话和事件助手。',
+      },
+      bidiwave: {
+        tagline: 'Python的WebDriver BiDi — 通过W3C标准与任何浏览器通信。',
+        description: '跨浏览器WebDriver BiDi客户端，支持Chrome、Firefox和Edge。异步优先，使用Pydantic v2模型。包括浏览、脚本执行、输入模拟、网络拦截、存储、模拟、权限、预加载脚本、CDP桥接和21种事件类型。',
+      },
+      'behave-format': {
+        tagline: 'Behave .feature文件的主格式化工具。',
+        description: 'Gherkin .feature文件的确定性、主格式化工具 — 如同Python的Black或Go的gofmt。幂等、CI友好（--check模式）、安全（永不改变语义）。消费behave-model并产生干净、一致的输出。',
+      },
+      'behave-model': {
+        tagline: 'Behave项目的规范对象模型。',
+        description: '提供干净、稳定、可扩展的Python API，表示Behave项目的每个元素 — 功能、规则、场景、步骤、标签、表格、文档字符串。完整Gherkin v6支持，访问者模式，查询API，序列化器，转换，验证和统计。',
+      },
+      'behave-modern-console-report': {
+        tagline: 'Behave的现代控制台报告格式化工具，具有丰富的终端输出。',
+        description: '六个格式化器（modern、modern-live、progress、log、ci、minimal），具有实时输出、进度条、彩色状态图标、故障诊断和每个格式化器的配置。受Playwright CLI、pytest和Cargo启发。',
+      },
+      'behave-modern-md-report': {
+        tagline: 'Behave的现代、易读、CI/CD友好的Markdown报告格式化工具。',
+        description: '生成单个report.md，包含执行摘要、功能表、标签统计、失败场景、最慢场景、可折叠场景详情、环境信息和步骤目录。适用于GitHub Actions摘要、GitLab、Azure DevOps和wiki。',
+      },
+      'behave-modern-html-report': {
+        tagline: 'Behave的现代、美观、单文件HTML报告格式化工具。',
+        description: '自包含HTML报告，具有深色/浅色/自动主题、交互式图表、即时搜索、标签分析、Gherkin Rules支持、带灯箱的附件、复制重现命令、步骤目录和可访问的键盘导航。零外部请求 — 永久离线工作。',
+      },
+      'behave-modern-json-report': {
+        tagline: 'Behave的现代JSON报告格式化工具，具有结构化执行模型。',
+        description: '带模式版本的JSON输出，具有稳定唯一标识符、结构化错误、附件、Gherkin背景和规则、扩展状态、丰富统计、环境检测、任意元数据和Cucumber JSON兼容性。生产就绪，123个测试。',
+      },
       'python-selenium-examples': {
         tagline: 'Python中全面的Selenium WebDriver 4示例。',
         description: '涵盖浏览器、驱动程序、元素、等待、交互、操作、BiDi/CDP等的独立可运行示例。每个模块包含一个私有的_build_driver()辅助函数，并遵循一致的学习和参考模式。',
       },
+      'python-behave-examples': {
+        tagline: '完整的自包含Behave自动化套件，演示所有主要Gherkin/Behave功能。',
+        description: '涵盖Background、带多个Examples的Scenario Outline、Gherkin v6 Rule块、数据表、DocStrings、异步步骤、使用Flask的REST API测试、外部CSV Examples、自定义类型转换器、环境钩子和多种报告格式（HTML、JSON、Markdown、JUnit、Cucumber）。使用behave 1.3.x。',
+      },
+      'cookiecutter-example': {
+        tagline: '学习、使用和创建Cookiecutter模板的参考仓库。',
+        description: '包含完整的Behave BDD项目模板，具有条件依赖、生成前/后钩子和git初始化。还包含4个极简示例（最小、钩子、选择/条件、动态Jinja2）、完整文档指南、速查表和精选资源。',
+      },
       'ai-toolkit': {
         tagline: '精选的AI提示词、技能、代理、规则、工作流和工具集合。',
         description: '为Cursor、Devin、Windsurf和其他AI IDE提供LLM驱动开发的组织资源库。包含64个提示词、11个技能、7个代理、14条规则、15个工作流和各种实用工具。',
+      },
+      'behave-lint': {
+        tagline: '快速、主格式化、可扩展的Gherkin .feature文件和Behave测试套件linter。',
+        description: '9个类别中50个内置规则，14个规则支持自动修复。包括watch模式、LSP服务器、5种输出格式（控制台、JSON、SARIF、Markdown、GitHub注释）、插件系统和零配置默认值。CI/CD就绪，支持GitHub Code Scanning的SARIF集成。',
       },
       'dev-command-center': {
         tagline: '用于管理和运行开发命令的桌面应用程序。',
@@ -628,6 +789,10 @@
       'stackpractices.com': {
         tagline: '开发者知识库，提供代码示例、设计模式和技术指南。',
         description: '面向软件工程师的SEO优先静态知识库。功能包括双语（EN/ES）内容集合，用于示例、模式、文档和指南。使用Astro 5、Tailwind CSS v4和Pagefind静态搜索构建。',
+      },
+      'nextquest-web': {
+        tagline: '游戏库管理器，具有透明的数据驱动推荐 — 无生成式AI。',
+        description: 'Nuxt 4 + NestJS单体仓库，集成IGDB目录、5状态个人库、带6个因子和4个预设的透明推荐引擎、入门向导、安全认证（httpOnly cookies + CSRF + Argon2id）、多语言（ES/EN）和暗色模式。pnpm workspaces + Turborepo。',
       },
     },
 
