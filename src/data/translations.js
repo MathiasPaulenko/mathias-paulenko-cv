@@ -146,6 +146,10 @@
         tagline: 'Game library manager with transparent, data-driven recommendations — no generative AI.',
         description: 'Nuxt 4 + NestJS monorepo with IGDB catalog integration, 5-state personal library, transparent recommendation engine with 6 factors and 4 presets, onboarding wizard, secure auth (httpOnly cookies + CSRF + Argon2id), multi-language (ES/EN), and dark mode. pnpm workspaces + Turborepo.',
       },
+      'yugioh-collection-manager-web': {
+        tagline: 'Local web app for managing Yu-Gi-Oh! card collections with analytics and price tracking.',
+        description: 'Django REST + React 17 full-stack app with PostgreSQL. Features card tracking, set browsing, YGOProDeck API integration, USD/EUR price conversion, collection CRUD with audit history, CSV/XLS import/export, Swagger docs, and Victory charts for analytics dashboards.',
+      },
     },
 
     experience: [
@@ -470,6 +474,10 @@
         tagline: 'Gestor de biblioteca de videojuegos con recomendaciones transparentes basadas en datos — sin IA generativa.',
         description: 'Monorepo Nuxt 4 + NestJS con integración del catálogo IGDB, biblioteca personal de 5 estados, motor de recomendación transparente con 6 factores y 4 presets, asistente de onboarding, autenticación segura (cookies httpOnly + CSRF + Argon2id), multi-idioma (ES/EN) y modo oscuro. pnpm workspaces + Turborepo.',
       },
+      'yugioh-collection-manager-web': {
+        tagline: 'App web local para gestionar colecciones de cartas Yu-Gi-Oh! con analíticas y seguimiento de precios.',
+        description: 'App full-stack Django REST + React 17 con PostgreSQL. Incluye seguimiento de cartas, exploración de sets, integración con API YGOProDeck, conversión de precios USD/EUR, CRUD de colección con historial de auditoría, import/export CSV/XLS, docs Swagger y gráficos Victory para dashboards analíticos.',
+      },
     },
 
     experience: [
@@ -793,6 +801,10 @@
       'nextquest-web': {
         tagline: '游戏库管理器，具有透明的数据驱动推荐 — 无生成式AI。',
         description: 'Nuxt 4 + NestJS单体仓库，集成IGDB目录、5状态个人库、带6个因子和4个预设的透明推荐引擎、入门向导、安全认证（httpOnly cookies + CSRF + Argon2id）、多语言（ES/EN）和暗色模式。pnpm workspaces + Turborepo。',
+      },
+      'yugioh-collection-manager-web': {
+        tagline: '管理Yu-Gi-Oh!卡牌收藏的本地Web应用，具有分析和价格跟踪功能。',
+        description: 'Django REST + React 17全栈应用，使用PostgreSQL。功能包括卡牌跟踪、套装浏览、YGOProDeck API集成、USD/EUR价格转换、带审计历史的收藏CRUD、CSV/XLS导入/导出、Swagger文档和Victory图表分析仪表板。',
       },
     },
 

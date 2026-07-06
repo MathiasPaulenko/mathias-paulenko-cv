@@ -614,5 +614,14 @@ export const portfolio = {
       version: '1.0.0',
       license: 'MIT',
     },
+    {
+      title: 'yugioh-collection-manager-web',
+      tagline: 'Local web app for managing Yu-Gi-Oh! card collections with analytics and price tracking.',
+      description: 'Django REST + React 17 full-stack app with PostgreSQL. Features card tracking, set browsing, YGOProDeck API integration, USD/EUR price conversion, collection CRUD with audit history, CSV/XLS import/export, Swagger docs, and Victory charts for analytics dashboards.',
+      tech: ['Django', 'React 17', 'PostgreSQL', 'DRF', 'Bootstrap 5', 'MUI 5', 'Victory'],
+      github: 'https://github.com/MathiasPaulenko/yugioh-collection-manager-web',
+      version: '1.0.0',
+      license: 'Apache-2.0',
+    },
   ],
 }
