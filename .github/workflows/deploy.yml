@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   test:
-    name: Quality Gate â€” Unit Tests
+    name: Quality Gate Ã¢â‚¬â€ Unit Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -37,7 +37,7 @@ jobs:
           cache: npm
       - run: npm install
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
