@@ -15,6 +15,8 @@ import {
   ChevronRight,
   Wrench,
   FolderOpen,
+  Terminal,
+  Monitor,
 } from 'lucide-react'
 
 const PAGE_SIZE = 8
@@ -124,14 +126,16 @@ const EmptyState = ({ icon: Icon, title, desc }) => (
 
 export const Portfolio = () => {
   const t = useTranslation()
-  const [activeTab, setActiveTab] = useState('libraries')
+  const [activeTab, setActiveTab] = useState('wave')
   const [page, setPage] = useState(1)
 
   const tabs = [
-    { id: 'libraries', label: t.tabLibraries || 'libraries/', icon: Code2 },
+    { id: 'wave', label: t.tabWave || 'wave/', icon: Globe },
+    { id: 'behave', label: t.tabBehave || 'behave/', icon: Code2 },
+    { id: 'utils', label: t.tabUtils || 'utils/', icon: Wrench },
     { id: 'resources', label: t.tabResources || 'resources/', icon: FolderOpen },
-    { id: 'tools', label: t.tabTools || 'tools/', icon: Wrench },
-    { id: 'webs', label: t.tabWebs || 'webs/', icon: Globe },
+    { id: 'tools', label: t.tabTools || 'tools/', icon: Terminal },
+    { id: 'webs', label: t.tabWebs || 'webs/', icon: Monitor },
   ]
 
   const rawItems = portfolio[activeTab] || []
@@ -197,31 +201,43 @@ export const Portfolio = () => {
               ) : (
                 <EmptyState
                   icon={
-                    activeTab === 'libraries'
-                      ? Code2
-                      : activeTab === 'resources'
-                        ? FolderOpen
-                        : activeTab === 'tools'
+                    activeTab === 'wave'
+                      ? Globe
+                      : activeTab === 'behave'
+                        ? Code2
+                        : activeTab === 'utils'
                           ? Wrench
-                          : Globe
+                          : activeTab === 'resources'
+                            ? FolderOpen
+                            : activeTab === 'tools'
+                              ? Terminal
+                              : Monitor
                   }
                   title={
-                    activeTab === 'libraries'
-                      ? t.librariesPlaceholder || 'Libraries & Packages'
-                      : activeTab === 'resources'
-                        ? t.resourcesPlaceholder || 'Resources & References'
-                        : activeTab === 'tools'
-                          ? t.toolsPlaceholder || 'Tools & Utilities'
-                          : t.websPlaceholder || 'Websites & Web Apps'
+                    activeTab === 'wave'
+                      ? t.wavePlaceholder || 'Wave Ecosystem'
+                      : activeTab === 'behave'
+                        ? t.behavePlaceholder || 'Behave Ecosystem'
+                        : activeTab === 'utils'
+                          ? t.utilsPlaceholder || 'Python Utilities'
+                          : activeTab === 'resources'
+                            ? t.resourcesPlaceholder || 'Resources & References'
+                            : activeTab === 'tools'
+                              ? t.toolsPlaceholder || 'Tools & Utilities'
+                              : t.websPlaceholder || 'Websites & Web Apps'
                   }
                   desc={
-                    activeTab === 'libraries'
-                      ? t.librariesPlaceholderDesc || 'Reusable libraries, CLI tools and Python packages. Coming soon.'
-                      : activeTab === 'resources'
-                        ? t.resourcesPlaceholderDesc || 'Code examples, learning resources and reference materials. Coming soon.'
-                        : activeTab === 'tools'
-                          ? t.toolsPlaceholderDesc || 'Desktop apps, CLI tools and development utilities. Coming soon.'
-                          : t.websPlaceholderDesc || 'Full websites, landing pages and web applications. Coming soon.'
+                    activeTab === 'wave'
+                      ? t.wavePlaceholderDesc || 'Browser automation tools in 100% Python. Coming soon.'
+                      : activeTab === 'behave'
+                        ? t.behavePlaceholderDesc || 'The Behave BDD ecosystem — formatters, runners, reports, and tooling. Coming soon.'
+                        : activeTab === 'utils'
+                          ? t.utilsPlaceholderDesc || 'Reusable Python utilities and packages. Coming soon.'
+                          : activeTab === 'resources'
+                            ? t.resourcesPlaceholderDesc || 'Code examples, learning resources and reference materials. Coming soon.'
+                            : activeTab === 'tools'
+                              ? t.toolsPlaceholderDesc || 'Desktop apps, CLI tools and development utilities. Coming soon.'
+                              : t.websPlaceholderDesc || 'Full websites, landing pages and web applications. Coming soon.'
                   }
                 />
               )}

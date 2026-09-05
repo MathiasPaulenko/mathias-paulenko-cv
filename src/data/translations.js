@@ -44,12 +44,18 @@
     portfolioSectionDesc: 'Explore all my projects, experiments and case studies in one place.',
     portfolioSectionCta: 'cd portfolio/',
     portfolioMoreComing: 'more coming soon...',
-    tabLibraries: 'libraries/',
+    tabWave: 'wave/',
+    tabBehave: 'behave/',
+    tabUtils: 'utils/',
     tabResources: 'resources/',
     tabTools: 'tools/',
     tabWebs: 'webs/',
-    librariesPlaceholder: 'Libraries & Packages',
-    librariesPlaceholderDesc: 'Reusable libraries, CLI tools and Python packages. Coming soon.',
+    wavePlaceholder: 'Wave Ecosystem',
+    wavePlaceholderDesc: 'Browser automation tools in 100% Python — CDP, BiDi, and MCP. Coming soon.',
+    behavePlaceholder: 'Behave Ecosystem',
+    behavePlaceholderDesc: 'The Behave BDD ecosystem — formatters, runners, reports, and tooling. Coming soon.',
+    utilsPlaceholder: 'Python Utilities',
+    utilsPlaceholderDesc: 'Reusable Python utilities and packages. Coming soon.',
     resourcesPlaceholder: 'Resources & References',
     resourcesPlaceholderDesc: 'Code examples, learning resources and reference materials. Coming soon.',
     toolsPlaceholder: 'Tools & Utilities',
@@ -74,6 +80,14 @@
         tagline: 'WebDriver BiDi for Python — talk to any browser via W3C standard.',
         description: 'Cross-browser WebDriver BiDi client supporting Chrome, Firefox, and Edge. Async-first with Pydantic v2 models. Includes browsing, script evaluation, input simulation, network interception, storage, emulation, permissions, preload scripts, CDP bridge, and 21 event types.',
       },
+      'wavexis-mcp': {
+        tagline: 'MCP server for browser automation — 220 tools via CDP + BiDi. 100% Python.',
+        description: 'Model Context Protocol server exposing 220 browser automation tools across 13 capability tiers: accessibility, core, data, devtools, emulation, experimental, interactions, network, storage, testing, video, vision, and workflows. Supports Chrome, Edge and Firefox. Includes stealth mode and Lighthouse audits. No Node.js, no Chromium download.',
+      },
+      browserget: {
+        tagline: 'Standalone CLI to install Chrome, Firefox, Edge and their WebDrivers.',
+        description: 'One-command browser and driver installer for automation, testing, and scraping. Downloads ChromeDriver, GeckoDriver, and EdgeDriver with automatic version matching. No Playwright, Selenium, or Puppeteer required — just the browsers and drivers you need.',
+      },
       'behave-format': {
         tagline: 'The opinionated formatter for Behave .feature files.',
         description: 'Deterministic, opinionated formatter for Gherkin .feature files — like Black for Python or gofmt for Go. Idempotent, CI-friendly with --check mode, safe (never changes semantics). Consumes behave-model and produces clean, consistent output.',
@@ -81,6 +95,58 @@
       'behave-model': {
         tagline: 'The canonical object model for Behave projects.',
         description: 'Provides a clean, stable, extensible Python API representing every element of a Behave project — features, rules, scenarios, steps, tags, tables, docstrings. Full Gherkin v6 support, visitor pattern, query API, serializers, transformations, validation, and statistics.',
+      },
+      'behave-lint': {
+        tagline: 'A fast, opinionated, extensible linter for Gherkin .feature files and Behave test suites.',
+        description: '50 built-in rules across 9 categories with auto-fix for 14 rules. Includes watch mode, LSP server, 5 output formats (console, JSON, SARIF, Markdown, GitHub annotations), plugin system, and zero-config defaults. CI/CD ready with SARIF integration for GitHub Code Scanning.',
+      },
+      'behave-kit': {
+        tagline: 'The Swiss-army knife for Behave — soft assertions, typed context, fixtures, and more.',
+        description: 'Soft assertions, typed context, conditional skip, environment management, tag-based fixtures, data loading, context dump, and step suggestions. Adopt incrementally with 3 levels of integration — from drop-in helper to full project configuration.',
+      },
+      'behave-data': {
+        tagline: 'Data management for Behave BDD — typed tables, fixtures, builders, and secrets.',
+        description: 'Typed tables, dynamic examples, fixtures, builders, secrets with masking, and declarative tags. Built on behave-tables. Provides a structured, type-safe approach to test data management in Behave projects.',
+      },
+      'behave-tables': {
+        tagline: 'Polished API for Behave Data Tables — convert to dicts, Pydantic models, CSV and JSON.',
+        description: 'Clean, type-safe API for converting Behave Data Tables to Python dicts, Pydantic models, CSV, and JSON. Zero dependencies, Python 3.11+. Supports header inference, column type coercion, and nested structures.',
+      },
+      'behave-comments': {
+        tagline: 'Parse doc strings, extract metadata from comments, and declare lifecycle hooks.',
+        description: 'Parse doc strings, extract metadata from comments, and declare lifecycle hooks in Behave .feature files. Supports JSON, YAML, XML, CSV, and more. Enables richer feature file annotations without changing Gherkin syntax.',
+      },
+      'behave-doctor': {
+        tagline: 'Static analysis and diagnostics for Behave BDD suites.',
+        description: 'Detects unused step definitions, undefined steps, oversized features, inconsistent tags, and circular import dependencies — without executing a single test. Fast, non-intrusive diagnostics that keep large Behave suites healthy.',
+      },
+      'behave-gen': {
+        tagline: 'CLI toolkit for scaffolding and evolving Behave BDD projects.',
+        description: 'Generate features, step libraries, and complete projects from OpenAPI, Postman, Swagger, or Cucumber specs. Scaffolds boilerplate-free BDD projects with consistent structure, ready for CI/CD integration.',
+      },
+      'behave-pool': {
+        tagline: 'Parallel test execution for Behave BDD via native ITestRunner.',
+        description: 'Process-isolated workers with spawn start method, LPT load balancing, and @serial tag support. Drop-in parallel runner that preserves Behave semantics while cutting execution time across CPU cores.',
+      },
+      'behave-priority': {
+        tagline: 'Priority-based execution for Behave BDD.',
+        description: 'Execute scenarios ordered by priority tags with fail-fast and smoke-first support. Ensures critical paths run first, optimizing feedback loops in large test suites.',
+      },
+      'behave-retry': {
+        tagline: 'Automatic retry for failed Behave scenarios.',
+        description: 'Tag overrides, exception filtering, and flakiness stats. Automatically retries intermittently failing scenarios with configurable retry counts, exception whitelists, and per-scenario flakiness reporting.',
+      },
+      'behave-runner': {
+        tagline: 'A unified CLI for the Behave BDD ecosystem.',
+        description: 'Run, list, select, lint, format, watch, report, trace and extend BDD workflows with optional plugins. Single entry point for the entire behave-* ecosystem — discover and invoke tools without memorizing individual CLIs.',
+      },
+      'behave-steplib': {
+        tagline: 'Reusable step libraries for Behave BDD.',
+        description: 'Share, discover and install typed, multilingual step definitions for HTTP APIs, web browsers, databases, and Kafka. Zero mandatory dependencies — each technology is an optional extra. Build reusable step libraries across teams and projects.',
+      },
+      'behave-trace': {
+        tagline: 'Trace viewer and step-by-step debugger for Behave BDD.',
+        description: 'Playwright-inspired web viewer with timeline, screenshots, before/after DOM diff, and real-time progress. Inspect exactly what happened at each step — variables, DOM state, screenshots, and timing — in an interactive trace viewer.',
       },
       'behave-modern-console-report': {
         tagline: 'Modern console report formatter for Behave with rich terminal output.',
@@ -98,6 +164,34 @@
         tagline: 'Modern JSON report formatter for Behave with structured execution model.',
         description: 'Schema-versioned JSON output with stable unique identifiers, structured errors, attachments, Gherkin backgrounds and rules, expanded statuses, rich statistics, environment detection, arbitrary metadata, and Cucumber JSON compatibility. Production-ready with 123 tests.',
       },
+      'behave-modern-file-report': {
+        tagline: 'Polished PDF, DOCX, and TXT report formatters for Behave BDD.',
+        description: 'Generate professional PDF, DOCX, and TXT reports with cover pages, executive summaries, feature tables, attachments, and custom branding. WeasyPrint-powered PDF, python-docx for Word, and plain-text output for legacy systems.',
+      },
+      'behave-modern-sheets-report': {
+        tagline: 'Modern spreadsheet report formatters for Behave BDD — CSV, XLSX, and ODS.',
+        description: 'Generates CSV, XLSX, and ODS execution reports with multi-sheet layouts, conditional formatting, and automatic trend history. Native spreadsheet output for teams that live in Excel — no conversion step required.',
+      },
+      'selenium-expect': {
+        tagline: 'Fluent expect() assertions with auto-retry for Selenium Python.',
+        description: '150+ assertions, soft assertions, custom matchers, locator-based expects, and configurable polling with backoff. Zero dependencies beyond Selenium 4.10+. Playwright-style expect() API for Selenium users.',
+      },
+      slugany: {
+        tagline: 'Multi-language slugify with zero dependencies.',
+        description: 'MIT-licensed, fully typed, idempotent alternative to python-slugify. Supports transliteration for Latin, Cyrillic, Greek, CJK, and Arabic scripts. Deterministic output — same input always produces the same slug.',
+      },
+      tmpkit: {
+        tagline: 'Ergonomic tempfile and tempdir context managers with auto-cleanup.',
+        description: 'Atomic writes, async support, and zero dependencies. Provides context managers for temporary files and directories that clean up after themselves — even on exceptions. Safer than tempfile.mkstemp with a cleaner API.',
+      },
+      enumplus: {
+        tagline: 'Enhanced Python enums with display names, metadata, and JSON serialization.',
+        description: 'Display names, metadata, JSON serialization, choices() for Django forms, and value-based comparison — zero dependencies, fully compatible with stdlib enum. Drop-in upgrade for enum.Enum with richer introspection.',
+      },
+      pluralio: {
+        tagline: 'Pluralization and singularization for Python — 6 languages, zero deps.',
+        description: 'Type-safe pluralization and singularization for English, Spanish, Portuguese, French, Italian, and Esperanto. 100% test coverage. Deterministic, rule-based engine with irregular form support.',
+      },
       'python-selenium-examples': {
         tagline: 'Comprehensive Selenium WebDriver 4 examples in Python.',
         description: 'Self-contained runnable examples covering browsers, drivers, elements, waits, interactions, actions, BiDi/CDP, and more. Each module includes a private _build_driver() helper and follows a consistent pattern for learning and reference.',
@@ -110,17 +204,29 @@
         tagline: 'Reference repository for learning, using, and creating Cookiecutter templates.',
         description: 'Includes a full Behave BDD project template with conditional dependencies, pre/post generation hooks, and git init. Also contains 4 minimalist examples (minimal, hooks, choices/conditionals, dynamic Jinja2), complete documentation guides, cheatsheet, and curated resources.',
       },
+      'stack-practices-resources': {
+        tagline: 'Companion resource repository for stackpractices.com.',
+        description: 'Code recipes, design patterns, technical guides, and documentation templates. Browse, search, and download runnable examples referenced from the main site. Covers Python, JavaScript, testing, DevOps, and architecture topics.',
+      },
+      'qa-practices-resources': {
+        tagline: 'Companion repository for qapractices.com — downloadable resources for QA engineers.',
+        description: 'Behave/Gherkin projects, test cases, checklists, templates, and AI prompts for QA engineers. Runnable examples that complement the guides on qapractices.com — ready to clone and adapt.',
+      },
+      'awesome-behave': {
+        tagline: 'A curated list of awesome resources, tools, libraries, and projects for Behave.',
+        description: 'Comprehensive curated list covering the entire Behave BDD ecosystem — tutorials, libraries, tools, integrations, report formatters, and community resources. BDD, Python style.',
+      },
       'ai-toolkit': {
         tagline: 'Curated collection of AI prompts, skills, agents, rules, workflows and tools.',
         description: 'Organized resource library for LLM-powered development with Cursor, Devin, Windsurf and other AI IDEs. Includes 64 prompts, 11 skills, 7 agents, 14 rules, 15 workflows and various utilities.',
       },
-      'behave-lint': {
-        tagline: 'A fast, opinionated, extensible linter for Gherkin .feature files and Behave test suites.',
-        description: '50 built-in rules across 9 categories with auto-fix for 14 rules. Includes watch mode, LSP server, 5 output formats (console, JSON, SARIF, Markdown, GitHub annotations), plugin system, and zero-config defaults. CI/CD ready with SARIF integration for GitHub Code Scanning.',
-      },
       'dev-command-center': {
         tagline: 'Desktop app for managing and running development commands.',
         description: 'Card-based command manager with parallel process execution, real-time logs, persistent history in SQLite, tagging system, and import/export. Built with PySide6 and SQLAlchemy.',
+      },
+      'wave-ecosystem-web': {
+        tagline: 'Landing page for the Wave Ecosystem — browser automation tools in 100% Python.',
+        description: 'Astro landing page showcasing the Wave ecosystem: cdpwave, bidiwave, wavexis, and wavexis-mcp. Highlights the no-Node.js, no-Chromium-download philosophy with feature comparisons, installation guides, and direct links to docs and PyPI.',
       },
       'cerveceria-burgos-web': {
         tagline: 'Official website for Cervecería Burgos, a traditional Spanish pub.',
@@ -372,12 +478,18 @@
     portfolioSectionDesc: 'Explora todos mis proyectos, experimentos y casos de estudio en un solo lugar.',
     portfolioSectionCta: 'cd portfolio/',
     portfolioMoreComing: 'más próximamente...',
-    tabLibraries: 'librerías/',
+    tabWave: 'wave/',
+    tabBehave: 'behave/',
+    tabUtils: 'utils/',
     tabResources: 'recursos/',
     tabTools: 'herramientas/',
     tabWebs: 'webs/',
-    librariesPlaceholder: 'Librerías y Paquetes',
-    librariesPlaceholderDesc: 'Librerías reutilizables, herramientas CLI y paquetes Python. Próximamente.',
+    wavePlaceholder: 'Ecosistema Wave',
+    wavePlaceholderDesc: 'Herramientas de automatización de navegadores en 100% Python — CDP, BiDi y MCP. Próximamente.',
+    behavePlaceholder: 'Ecosistema Behave',
+    behavePlaceholderDesc: 'El ecosistema BDD de Behave — formateadores, runners, reportes y tooling. Próximamente.',
+    utilsPlaceholder: 'Utilidades Python',
+    utilsPlaceholderDesc: 'Utilidades y paquetes Python reutilizables. Próximamente.',
     resourcesPlaceholder: 'Recursos y Referencias',
     resourcesPlaceholderDesc: 'Ejemplos de código, recursos de aprendizaje y materiales de referencia. Próximamente.',
     toolsPlaceholder: 'Herramientas y Utilidades',
@@ -402,6 +514,14 @@
         tagline: 'WebDriver BiDi para Python — comunícate con cualquier navegador vía estándar W3C.',
         description: 'Cliente WebDriver BiDi multi-navegador compatible con Chrome, Firefox y Edge. Asíncrono desde el inicio con modelos Pydantic v2. Incluye navegación, evaluación de scripts, simulación de input, interceptación de red, almacenamiento, emulación, permisos, preload scripts, puente CDP y 21 tipos de eventos.',
       },
+      'wavexis-mcp': {
+        tagline: 'Servidor MCP para automatización de navegadores — 220 herramientas vía CDP + BiDi. 100% Python.',
+        description: 'Servidor Model Context Protocol que expone 220 herramientas de automatización de navegadores en 13 niveles de capacidad: accesibilidad, core, data, devtools, emulación, experimental, interacciones, red, almacenamiento, testing, video, visión y workflows. Soporta Chrome, Edge y Firefox. Incluye modo stealth y auditorías Lighthouse. Sin Node.js, sin descarga de Chromium.',
+      },
+      browserget: {
+        tagline: 'CLI standalone para instalar Chrome, Firefox, Edge y sus WebDrivers.',
+        description: 'Instalador de navegadores y drivers en un comando para automatización, testing y scraping. Descarga ChromeDriver, GeckoDriver y EdgeDriver con coincidencia automática de versiones. Sin Playwright, Selenium o Puppeteer — solo los navegadores y drivers que necesitas.',
+      },
       'behave-format': {
         tagline: 'El formateador opinionated para archivos .feature de Behave.',
         description: 'Formateador determinista y opinionated para archivos .feature Gherkin — como Black para Python o gofmt para Go. Idempotente, compatible con CI mediante --check, seguro (nunca cambia la semántica). Consume behave-model y produce salida limpia y consistente.',
@@ -409,6 +529,58 @@
       'behave-model': {
         tagline: 'El modelo de objetos canónico para proyectos Behave.',
         description: 'Proporciona una API Python limpia, estable y extensible que representa cada elemento de un proyecto Behave — features, rules, scenarios, steps, tags, tablas, docstrings. Soporte completo de Gherkin v6, patrón visitor, API de consulta, serializadores, transformaciones, validación y estadísticas.',
+      },
+      'behave-lint': {
+        tagline: 'Linter rápido, opinionated y extensible para archivos .feature Gherkin y suites de testing Behave.',
+        description: '50 reglas integradas en 9 categorías con auto-fix para 14 reglas. Incluye modo watch, servidor LSP, 5 formatos de salida (consola, JSON, SARIF, Markdown, anotaciones GitHub), sistema de plugins y configuración cero. Listo para CI/CD con integración SARIF para GitHub Code Scanning.',
+      },
+      'behave-kit': {
+        tagline: 'La navaja suiza de Behave — soft assertions, context tipado, fixtures y más.',
+        description: 'Soft assertions, context tipado, skip condicional, gestión de entorno, fixtures basados en tags, carga de datos, volcado de contexto y sugerencias de steps. Adopción incremental con 3 niveles de integración — desde helper drop-in hasta configuración completa de proyecto.',
+      },
+      'behave-data': {
+        tagline: 'Gestión de datos para Behave BDD — tablas tipadas, fixtures, builders y secrets.',
+        description: 'Tablas tipadas, examples dinámicos, fixtures, builders, secrets con masking y tags declarativos. Construido sobre behave-tables. Proporciona un enfoque estructurado y type-safe para la gestión de datos de testing en proyectos Behave.',
+      },
+      'behave-tables': {
+        tagline: 'API pulida para Data Tables de Behave — conversión a dicts, modelos Pydantic, CSV y JSON.',
+        description: 'API limpia y type-safe para convertir Data Tables de Behave a dicts de Python, modelos Pydantic, CSV y JSON. Cero dependencias, Python 3.11+. Soporta inferencia de headers, coerción de tipos de columnas y estructuras anidadas.',
+      },
+      'behave-comments': {
+        tagline: 'Parsear doc strings, extraer metadatos de comentarios y declarar lifecycle hooks.',
+        description: 'Parsea doc strings, extrae metadatos de comentarios y declara lifecycle hooks en archivos .feature de Behave. Soporta JSON, YAML, XML, CSV y más. Habilita anotaciones más ricas en feature files sin cambiar la sintaxis Gherkin.',
+      },
+      'behave-doctor': {
+        tagline: 'Análisis estático y diagnósticos para suites Behave BDD.',
+        description: 'Detecta step definitions no usados, steps indefinidos, features sobredimensionadas, tags inconsistentes y dependencias circulares de imports — sin ejecutar un solo test. Diagnósticos rápidos y no intrusivos que mantienen suites grandes de Behave saludables.',
+      },
+      'behave-gen': {
+        tagline: 'Toolkit CLI para scaffolding y evolución de proyectos Behave BDD.',
+        description: 'Genera features, step libraries y proyectos completos desde OpenAPI, Postman, Swagger o Cucumber. Crea proyectos BDD sin boilerplate con estructura consistente, listos para integración CI/CD.',
+      },
+      'behave-pool': {
+        tagline: 'Ejecución paralela de tests para Behave BDD vía ITestRunner nativo.',
+        description: 'Workers aislados por proceso con método spawn, balanceo de carga LPT y soporte de tag @serial. Runner paralelo drop-in que preserva la semántica de Behave mientras reduce el tiempo de ejecución across cores.',
+      },
+      'behave-priority': {
+        tagline: 'Ejecución basada en prioridades para Behave BDD.',
+        description: 'Ejecuta escenarios ordenados por tags de prioridad con soporte fail-fast y smoke-first. Asegura que los caminos críticos se ejecuten primero, optimizando los ciclos de feedback en suites grandes.',
+      },
+      'behave-retry': {
+        tagline: 'Reintentos automáticos para escenarios fallidos de Behave.',
+        description: 'Overrides por tags, filtrado de excepciones y estadísticas de flakiness. Reintena automáticamente escenarios que fallan intermitentemente con conteos configurables, listas blancas de excepciones y reporte de flakiness por escenario.',
+      },
+      'behave-runner': {
+        tagline: 'CLI unificada para el ecosistema BDD de Behave.',
+        description: 'Ejecuta, lista, selecciona, lintea, formatea, observa, reporta, traza y extiende flujos BDD con plugins opcionales. Punto de entrada único para todo el ecosistema behave-* — descubre e invoca herramientas sin memorizar CLIs individuales.',
+      },
+      'behave-steplib': {
+        tagline: 'Librerías de steps reutilizables para Behave BDD.',
+        description: 'Comparte, descubre e instala step definitions tipadas y multilingües para APIs HTTP, navegadores web, bases de datos y Kafka. Cero dependencias obligatorias — cada tecnología es un extra opcional. Construye librerías de steps reutilizables entre equipos y proyectos.',
+      },
+      'behave-trace': {
+        tagline: 'Visor de trazas y debugger paso a paso para Behave BDD.',
+        description: 'Visor web inspirado en Playwright con timeline, capturas, diff DOM antes/después y progreso en tiempo real. Inspecciona exactamente qué ocurrió en cada step — variables, estado del DOM, capturas y timing — en un visor de trazas interactivo.',
       },
       'behave-modern-console-report': {
         tagline: 'Formateador de reportes de consola moderno para Behave con salida de terminal enriquecida.',
@@ -426,6 +598,34 @@
         tagline: 'Formateador de reportes JSON moderno para Behave con modelo de ejecución estructurado.',
         description: 'Salida JSON con versión de esquema, identificadores únicos estables, errores estructurados, attachments, backgrounds y rules de Gherkin, estados expandidos, estadísticas ricas, detección de entorno, metadatos arbitrarios y compatibilidad con Cucumber JSON. Listo para producción con 123 tests.',
       },
+      'behave-modern-file-report': {
+        tagline: 'Formateadores de reportes PDF, DOCX y TXT pulidos para Behave BDD.',
+        description: 'Genera reportes profesionales en PDF, DOCX y TXT con portadas, resúmenes ejecutivos, tablas de features, attachments y branding personalizado. PDF con WeasyPrint, Word con python-docx y salida de texto plano para sistemas legacy.',
+      },
+      'behave-modern-sheets-report': {
+        tagline: 'Formateadores de reportes en hojas de cálculo modernos para Behave BDD — CSV, XLSX y ODS.',
+        description: 'Genera reportes de ejecución en CSV, XLSX y ODS con layouts multi-hoja, formato condicional e historial automático de tendencias. Salida nativa de hoja de cálculo para equipos que viven en Excel — sin paso de conversión.',
+      },
+      'selenium-expect': {
+        tagline: 'Aserciones fluent expect() con auto-retry para Selenium Python.',
+        description: 'Más de 150 aserciones, soft assertions, matchers personalizados, expects basados en localizadores y polling configurable con backoff. Cero dependencias más allá de Selenium 4.10+. API expect() estilo Playwright para usuarios de Selenium.',
+      },
+      slugany: {
+        tagline: 'Slugify multi-idioma con cero dependencias.',
+        description: 'Alternativa MIT, totalmente tipada e idempotente a python-slugify. Soporta transliteración para scripts Latino, Cirílico, Griego, CJK y Árabe. Salida determinista — misma entrada produce siempre el mismo slug.',
+      },
+      tmpkit: {
+        tagline: 'Context managers ergonómicos para tempfile y tempdir con auto-cleanup.',
+        description: 'Escritura atómica, soporte async y cero dependencias. Proporciona context managers para archivos y directorios temporales que se limpian solos — incluso en excepciones. Más seguro que tempfile.mkstemp con una API más limpia.',
+      },
+      enumplus: {
+        tagline: 'Enums de Python mejorados con display names, metadatos y serialización JSON.',
+        description: 'Display names, metadatos, serialización JSON, choices() para formularios Django y comparación por valor — cero dependencias, totalmente compatible con stdlib enum. Upgrade drop-in para enum.Enum con introspección más rica.',
+      },
+      pluralio: {
+        tagline: 'Pluralización y singularización para Python — 6 idiomas, cero deps.',
+        description: 'Pluralización y singularización type-safe para Inglés, Español, Portugués, Francés, Italiano y Esperanto. 100% cobertura de tests. Motor determinista basado en reglas con soporte de formas irregulares.',
+      },
       'python-selenium-examples': {
         tagline: 'Ejemplos completos de Selenium WebDriver 4 en Python.',
         description: 'Ejemplos ejecutables autónomos que cubren navegadores, drivers, elementos, esperas, interacciones, acciones, BiDi/CDP y más. Cada módulo incluye un helper privado _build_driver() y sigue un patrón consistente para aprendizaje y referencia.',
@@ -438,17 +638,29 @@
         tagline: 'Repositorio de referencia para aprender, usar y crear plantillas de Cookiecutter.',
         description: 'Incluye una plantilla completa de proyecto Behave BDD con dependencias condicionales, hooks pre/post generación e init de git. También contiene 4 ejemplos minimalistas (mínimo, hooks, choices/conditionals, Jinja2 dinámico), guías de documentación completas, cheatsheet y recursos curados.',
       },
+      'stack-practices-resources': {
+        tagline: 'Repositorio companion de recursos para stackpractices.com.',
+        description: 'Recetas de código, patrones de diseño, guías técnicas y plantillas de documentación. Explora, busca y descarga ejemplos ejecutables referenciados desde el sitio principal. Cubre Python, JavaScript, testing, DevOps y arquitectura.',
+      },
+      'qa-practices-resources': {
+        tagline: 'Repositorio companion para qapractices.com — recursos descargables para ingenieros QA.',
+        description: 'Proyectos Behave/Gherkin, casos de prueba, checklists, plantillas y prompts de IA para ingenieros QA. Ejemplos ejecutables que complementan las guías de qapractices.com — listos para clonar y adaptar.',
+      },
+      'awesome-behave': {
+        tagline: 'Lista curada de recursos, herramientas, librerías y proyectos awesome para Behave.',
+        description: 'Lista curada y completa que cubre todo el ecosistema BDD de Behave — tutoriales, librerías, herramientas, integraciones, formateadores de reportes y recursos de la comunidad. BDD, estilo Python.',
+      },
       'ai-toolkit': {
         tagline: 'Colección curada de prompts, skills, agentes, reglas, workflows y herramientas de IA.',
         description: 'Biblioteca de recursos organizada para desarrollo potenciado por LLM con Cursor, Devin, Windsurf y otros IDEs de IA. Incluye 64 prompts, 11 skills, 7 agentes, 14 reglas, 15 workflows y diversas utilidades.',
       },
-      'behave-lint': {
-        tagline: 'Linter rápido, opinionated y extensible para archivos .feature Gherkin y suites de testing Behave.',
-        description: '50 reglas integradas en 9 categorías con auto-fix para 14 reglas. Incluye modo watch, servidor LSP, 5 formatos de salida (consola, JSON, SARIF, Markdown, anotaciones GitHub), sistema de plugins y configuración cero. Listo para CI/CD con integración SARIF para GitHub Code Scanning.',
-      },
       'dev-command-center': {
         tagline: 'Aplicación de escritorio para gestionar y ejecutar comandos de desarrollo.',
         description: 'Gestor de comandos basado en tarjetas con ejecución paralela de procesos, logs en tiempo real, historial persistente en SQLite, sistema de etiquetado e import/export. Construido con PySide6 y SQLAlchemy.',
+      },
+      'wave-ecosystem-web': {
+        tagline: 'Landing page del Ecosistema Wave — herramientas de automatización de navegadores en 100% Python.',
+        description: 'Landing page en Astro que muestra el ecosistema Wave: cdpwave, bidiwave, wavexis y wavexis-mcp. Destaca la filosofía sin Node.js y sin descarga de Chromium con comparativas de features, guías de instalación y enlaces directos a docs y PyPI.',
       },
       'cerveceria-burgos-web': {
         tagline: 'Sitio web oficial de Cervecería Burgos, un pub tradicional español.',
@@ -700,12 +912,18 @@
     portfolioSectionDesc: '在一个地方探索我的所有项目、实验和案例研究。',
     portfolioSectionCta: 'cd portfolio/',
     portfolioMoreComing: '更多精彩内容，敬请期待...',
-    tabLibraries: '库/',
+    tabWave: 'wave/',
+    tabBehave: 'behave/',
+    tabUtils: 'utils/',
     tabResources: '资源/',
     tabTools: '工具/',
     tabWebs: '网站/',
-    librariesPlaceholder: '库与包',
-    librariesPlaceholderDesc: '可复用的库、CLI工具和Python包。即将上线。',
+    wavePlaceholder: 'Wave生态系统',
+    wavePlaceholderDesc: '100% Python的浏览器自动化工具 — CDP、BiDi和MCP。即将上线。',
+    behavePlaceholder: 'Behave生态系统',
+    behavePlaceholderDesc: 'Behave BDD生态系统 — 格式化器、运行器、报告和工具。即将上线。',
+    utilsPlaceholder: 'Python实用程序',
+    utilsPlaceholderDesc: '可复用的Python实用程序和包。即将上线。',
     resourcesPlaceholder: '资源与参考',
     resourcesPlaceholderDesc: '代码示例、学习资源和参考资料。即将上线。',
     toolsPlaceholder: '工具与实用程序',
@@ -730,6 +948,14 @@
         tagline: 'Python的WebDriver BiDi — 通过W3C标准与任何浏览器通信。',
         description: '跨浏览器WebDriver BiDi客户端，支持Chrome、Firefox和Edge。异步优先，使用Pydantic v2模型。包括浏览、脚本执行、输入模拟、网络拦截、存储、模拟、权限、预加载脚本、CDP桥接和21种事件类型。',
       },
+      'wavexis-mcp': {
+        tagline: '浏览器自动化MCP服务器 — 通过CDP + BiDi提供220个工具。100% Python。',
+        description: 'Model Context Protocol服务器，跨13个能力层级暴露220个浏览器自动化工具：无障碍、核心、数据、开发工具、模拟、实验、交互、网络、存储、测试、视频、视觉和工作流。支持Chrome、Edge和Firefox。包括隐身模式和Lighthouse审计。无需Node.js，无需下载Chromium。',
+      },
+      browserget: {
+        tagline: '独立CLI，用于安装Chrome、Firefox、Edge及其WebDrivers。',
+        description: '一键安装浏览器和驱动程序，用于自动化、测试和抓取。下载ChromeDriver、GeckoDriver和EdgeDriver，自动匹配版本。无需Playwright、Selenium或Puppeteer — 只需你需要的浏览器和驱动。',
+      },
       'behave-format': {
         tagline: 'Behave .feature文件的主格式化工具。',
         description: 'Gherkin .feature文件的确定性、主格式化工具 — 如同Python的Black或Go的gofmt。幂等、CI友好（--check模式）、安全（永不改变语义）。消费behave-model并产生干净、一致的输出。',
@@ -737,6 +963,58 @@
       'behave-model': {
         tagline: 'Behave项目的规范对象模型。',
         description: '提供干净、稳定、可扩展的Python API，表示Behave项目的每个元素 — 功能、规则、场景、步骤、标签、表格、文档字符串。完整Gherkin v6支持，访问者模式，查询API，序列化器，转换，验证和统计。',
+      },
+      'behave-lint': {
+        tagline: '快速、主格式化、可扩展的Gherkin .feature文件和Behave测试套件linter。',
+        description: '9个类别中50个内置规则，14个规则支持自动修复。包括watch模式、LSP服务器、5种输出格式（控制台、JSON、SARIF、Markdown、GitHub注释）、插件系统和零配置默认值。CI/CD就绪，支持GitHub Code Scanning的SARIF集成。',
+      },
+      'behave-kit': {
+        tagline: 'Behave的瑞士军刀 — 软断言、类型化上下文、fixtures等。',
+        description: '软断言、类型化上下文、条件跳过、环境管理、基于标签的fixtures、数据加载、上下文转储和步骤建议。通过3级集成渐进式采用 — 从即插即用助手到完整项目配置。',
+      },
+      'behave-data': {
+        tagline: 'Behave BDD的数据管理 — 类型化表格、fixtures、构建器和密钥。',
+        description: '类型化表格、动态示例、fixtures、构建器、带掩码的密钥和声明式标签。基于behave-tables构建。为Behave项目中的测试数据管理提供结构化、类型安全的方法。',
+      },
+      'behave-tables': {
+        tagline: 'Behave Data Tables的精致API — 转换为dicts、Pydantic模型、CSV和JSON。',
+        description: '干净、类型安全的API，用于将Behave Data Tables转换为Python dicts、Pydantic模型、CSV和JSON。零依赖，Python 3.11+。支持标题推断、列类型强制转换和嵌套结构。',
+      },
+      'behave-comments': {
+        tagline: '解析文档字符串、从注释中提取元数据并声明生命周期钩子。',
+        description: '解析文档字符串、从注释中提取元数据并在Behave .feature文件中声明生命周期钩子。支持JSON、YAML、XML、CSV等。在不改变Gherkin语法的情况下启用更丰富的功能文件注释。',
+      },
+      'behave-doctor': {
+        tagline: 'Behave BDD套件的静态分析和诊断。',
+        description: '检测未使用的步骤定义、未定义的步骤、过大的功能、不一致的标签和循环导入依赖 — 无需执行任何测试。快速、非侵入性的诊断，保持大型Behave套件健康。',
+      },
+      'behave-gen': {
+        tagline: '用于搭建和发展Behave BDD项目的CLI工具包。',
+        description: '从OpenAPI、Postman、Swagger或Cucumber生成功能、步骤库和完整项目。搭建无样板代码的BDD项目，结构一致， ready for CI/CD集成。',
+      },
+      'behave-pool': {
+        tagline: '通过原生ITestRunner实现Behave BDD的并行测试执行。',
+        description: '进程隔离的工作器，使用spawn启动方法、LPT负载均衡和@serial标签支持。即插即用的并行运行器，保持Behave语义的同时跨CPU核心缩短执行时间。',
+      },
+      'behave-priority': {
+        tagline: 'Behave BDD的基于优先级的执行。',
+        description: '按优先级标签排序执行场景，支持fail-fast和smoke-first。确保关键路径优先运行，优化大型测试套件中的反馈循环。',
+      },
+      'behave-retry': {
+        tagline: '失败的Behave场景自动重试。',
+        description: '标签覆盖、异常过滤和不稳定统计。自动重试间歇性失败的场景，可配置重试次数、异常白名单和每个场景的不稳定性报告。',
+      },
+      'behave-runner': {
+        tagline: 'Behave BDD生态系统的统一CLI。',
+        description: '运行、列出、选择、lint、格式化、监视、报告、跟踪和扩展BDD工作流，支持可选插件。整个behave-*生态系统的单一入口点 — 无需记忆各个CLI即可发现和调用工具。',
+      },
+      'behave-steplib': {
+        tagline: 'Behave BDD的可复用步骤库。',
+        description: '共享、发现和安装类型化、多语言的步骤定义，用于HTTP API、Web浏览器、数据库和Kafka。零强制依赖 — 每个技术是可选的额外组件。跨团队和项目构建可复用的步骤库。',
+      },
+      'behave-trace': {
+        tagline: 'Behave BDD的跟踪查看器和逐步调试器。',
+        description: '受Playwright启发的Web查看器，具有时间线、截图、前后DOM差异和实时进度。在交互式跟踪查看器中检查每个步骤发生了什么 — 变量、DOM状态、截图和计时。',
       },
       'behave-modern-console-report': {
         tagline: 'Behave的现代控制台报告格式化工具，具有丰富的终端输出。',
@@ -754,6 +1032,34 @@
         tagline: 'Behave的现代JSON报告格式化工具，具有结构化执行模型。',
         description: '带模式版本的JSON输出，具有稳定唯一标识符、结构化错误、附件、Gherkin背景和规则、扩展状态、丰富统计、环境检测、任意元数据和Cucumber JSON兼容性。生产就绪，123个测试。',
       },
+      'behave-modern-file-report': {
+        tagline: 'Behave BDD的精美PDF、DOCX和TXT报告格式化工具。',
+        description: '生成专业的PDF、DOCX和TXT报告，具有封面、执行摘要、功能表、附件和自定义品牌。WeasyPrint驱动的PDF、python-docx生成的Word和用于遗留系统的纯文本输出。',
+      },
+      'behave-modern-sheets-report': {
+        tagline: 'Behave BDD的现代电子表格报告格式化工具 — CSV、XLSX和ODS。',
+        description: '生成CSV、XLSX和ODS执行报告，具有多表布局、条件格式和自动趋势历史。为使用Excel的团队提供原生电子表格输出 — 无需转换步骤。',
+      },
+      'selenium-expect': {
+        tagline: 'Selenium Python的流畅expect()断言，带自动重试。',
+        description: '150+断言、软断言、自定义匹配器、基于定位器的expects和带退避的可配置轮询。除Selenium 4.10+外零依赖。为Selenium用户提供Playwright风格的expect() API。',
+      },
+      slugany: {
+        tagline: '多语言slugify，零依赖。',
+        description: 'MIT许可、完全类型化、幂等的python-slugify替代品。支持拉丁、西里尔、希腊、中日韩和阿拉伯脚本的音译。确定性输出 — 相同输入始终产生相同的slug。',
+      },
+      tmpkit: {
+        tagline: '人体工程学的临时文件和临时目录上下文管理器，带自动清理。',
+        description: '原子写入、异步支持和零依赖。提供临时文件和目录的上下文管理器，即使异常也能自动清理。比tempfile.mkstemp更安全，API更简洁。',
+      },
+      enumplus: {
+        tagline: '增强的Python枚举，具有显示名称、元数据和JSON序列化。',
+        description: '显示名称、元数据、JSON序列化、Django表单的choices()和基于值的比较 — 零依赖，完全兼容stdlib enum。enum.Enum的即插即用升级，具有更丰富的内省。',
+      },
+      pluralio: {
+        tagline: 'Python的复数化和单数化 — 6种语言，零依赖。',
+        description: '英语、西班牙语、葡萄牙语、法语、意大利语和世界语的类型安全复数化和单数化。100%测试覆盖。确定性、基于规则的引擎，支持不规则形式。',
+      },
       'python-selenium-examples': {
         tagline: 'Python中全面的Selenium WebDriver 4示例。',
         description: '涵盖浏览器、驱动程序、元素、等待、交互、操作、BiDi/CDP等的独立可运行示例。每个模块包含一个私有的_build_driver()辅助函数，并遵循一致的学习和参考模式。',
@@ -766,17 +1072,29 @@
         tagline: '学习、使用和创建Cookiecutter模板的参考仓库。',
         description: '包含完整的Behave BDD项目模板，具有条件依赖、生成前/后钩子和git初始化。还包含4个极简示例（最小、钩子、选择/条件、动态Jinja2）、完整文档指南、速查表和精选资源。',
       },
+      'stack-practices-resources': {
+        tagline: 'stackpractices.com的配套资源仓库。',
+        description: '代码示例、设计模式、技术指南和文档模板。浏览、搜索和下载主站点引用的可运行示例。涵盖Python、JavaScript、测试、DevOps和架构主题。',
+      },
+      'qa-practices-resources': {
+        tagline: 'qapractices.com的配套仓库 — QA工程师的可下载资源。',
+        description: 'Behave/Gherkin项目、测试用例、检查清单、模板和QA工程师的AI提示。可运行示例补充qapractices.com上的指南 — 准备好克隆和改编。',
+      },
+      'awesome-behave': {
+        tagline: 'Behave的精选资源、工具、库和项目列表。',
+        description: '全面精选列表，涵盖整个Behave BDD生态系统 — 教程、库、工具、集成、报告格式化器和社区资源。BDD，Python风格。',
+      },
       'ai-toolkit': {
         tagline: '精选的AI提示词、技能、代理、规则、工作流和工具集合。',
         description: '为Cursor、Devin、Windsurf和其他AI IDE提供LLM驱动开发的组织资源库。包含64个提示词、11个技能、7个代理、14条规则、15个工作流和各种实用工具。',
       },
-      'behave-lint': {
-        tagline: '快速、主格式化、可扩展的Gherkin .feature文件和Behave测试套件linter。',
-        description: '9个类别中50个内置规则，14个规则支持自动修复。包括watch模式、LSP服务器、5种输出格式（控制台、JSON、SARIF、Markdown、GitHub注释）、插件系统和零配置默认值。CI/CD就绪，支持GitHub Code Scanning的SARIF集成。',
-      },
       'dev-command-center': {
         tagline: '用于管理和运行开发命令的桌面应用程序。',
         description: '基于卡片的命令管理器，支持并行进程执行、实时日志、SQLite持久化历史记录、标签系统和导入/导出功能。使用PySide6和SQLAlchemy构建。',
+      },
+      'wave-ecosystem-web': {
+        tagline: 'Wave生态系统的落地页 — 100% Python的浏览器自动化工具。',
+        description: 'Astro落地页，展示Wave生态系统：cdpwave、bidiwave、wavexis和wavexis-mcp。突出无Node.js、无Chromium下载的理念，包含功能对比、安装指南以及文档和PyPI的直接链接。',
       },
       'cerveceria-burgos-web': {
         tagline: 'Cervecería Burgos官方网站，一家传统西班牙酒吧。',
